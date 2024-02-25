@@ -1,0 +1,40 @@
+.componentContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 0px;
+    /* gap */
+    width: 100%;
+    background-color: grey;
+
+}
+
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 0 var(--padding); 
+    height: 8rem;
+    background-color: white;
+    border: black .1px solid;
+}
+
+.centerLinks{
+    display: flex;
+    gap: 3rem;
+}
+
+.centerLinks > a {
+    font-size: 1.3rem;
+}
+
+.rightButtonComponent > button{
+  background-color: black;
+}
+
+
+

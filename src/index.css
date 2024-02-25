@@ -1,0 +1,11 @@
+:root {
+  --max-width: 1200px;
+  --padding: 2rem;
+}
+
+/* this pushes all the content, except the nav that
+has position fixed, to start 80px below top */
+body{
+    padding-top: 8rem;
+  }
+
