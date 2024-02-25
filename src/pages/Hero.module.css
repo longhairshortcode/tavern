@@ -2,19 +2,248 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: calc(100vh - 8rem);
+    gap: 2.25rem;
+    padding-top: 4rem;
+    background-color: rgba(241, 237, 237);
 
-}
-
-.h1Container, .imageAndTextContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px black solid;
-    max-width: var(--max-width);
-    padding: 0 var (--padding);
 }
 
 .h1Large{
-    font-size: 12.5rem;
+    font-size: 7.5rem;
     font-weight: 100;
+    /* max-width: 700px; */
+    /* border: 2px pink solid; */
+}
+
+.h1Container, .imageAndTextContainer{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* border: 4px black dotted; */
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 0 var (--padding);
+    background-color: rgba(241, 237, 237);
+    height: 100%;
+}
+
+
+
+
+.imgContainer{
+    width: 50%;
+    /* border: purple 4px solid; */
+}
+
+.imageAndTextContainer{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* gap: 5rem; */
+    /* border: orange 4px dotted; */
+}
+
+
+
+
+
+.rightOfImgContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+    /* border: 4px green solid; */
+    /* background-color: yellow; */
+    width: 50%;
+    max-height: 100%; 
+    padding-left: 5rem;
+    /* is this correct way to make this height of parent? */
+    /* height */
+}
+
+.bestPlaceAllContainer{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    max-width: 100%;
+    line-height: 2rem;
+    /* border: 4px blue solid;   */
+}
+
+.bestPlaceHash{
+    color: green;
+    font-size: 1.75rem;
+    /* border: 4px lightblue solid; */
+}
+
+.bestPlacePara{
+    font-size: 1.3rem;
+    width: 300px;
+    /* border: 4px green solid; */
+}
+
+.orangeButtonComponent > button{
+    background-color: orange;
+    width: 140px;
+    padding: 1.25rem;
+    font-size: 1rem;
+}
+
+.orangeButtonComponent{
+    /* border: 4px black solid; */
+}
+
+.customerContainer{
+    display: flex;
+    /* justify-content: center; */
+    /* gap: 2rem; */
+    width: 100%;
+    /* border: red solid 4px; */
+    /* background-color: pink; */
+}
+
+.leftCustomerContainer, .rightCustomerContainer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* border: 5px orange solid; */
+}
+
+
+.bigNum{
+    font-size: 2.5rem;
+}
+
+.bigNumWords{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3rem;
+    /* border: 2px black solid; */
+    padding-right: 1.5rem; 
+}
+
+
+.bigNumWords, .customerPicWords{
+    font-size: .8rem;
+}
+
+
+
+.rightCustomerContainer{
+    border-left: grey 1px solid;
+    padding-left: 1.5rem;
+}
+
+
+.customerPicWords{
+    max-width: 11rem;
+    line-height: 1.25rem;
+}
+
+
+
+/* THIRD CHILD IN rightOfImgContainer */
+
+.mouseContainer{
+    /* border: 4px brown solid; */
+    width: fit-content;
+}
+
+
+.breadMobile, .cheeseMobile{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 480px){
+
+    .imgContainer{
+        display: flex;
+        justify-content: center;
+        /* border: 2px red solid; */
+        width: 100%;
+    }
+    
+    .imageAndTextContainer{
+        flex-direction: column;
+        gap: 5rem;
+        /* padding: 50px; */
+    }
+
+    
+
+    .rightOfImgContainer{
+        /* border: 2px blue solid; */
+        display: flex;
+        width: 100%;
+        gap: 5rem;
+        padding: var(--padding);
+    }
+
+    .bestPlaceAllContainer{
+        /* border: 4px pink solid; */
+        gap: 2rem;
+    }
+
+    .bestPlaceHash{
+        text-align: center;
+        /* margin: 0 auto; */
+        /* border: black 4px solid; */
+    }
+
+    .bestPlacePara{
+        /* border: yellow 4px solid; */
+        padding-left: 3rem;
+        width: 100%;
+    }
+
+    .orangeButtonComponent{
+        /* border: red 4px solid; */
+        text-align: center;
+    }
+
+    .customerContainer{
+        /* border: 4px blue solid; */
+        justify-content: center;
+    }
+
+    .mouseContainer{
+        /* border: grey 4px solid; */
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+
+    /* //fine */
+
+    .h1Large{
+        font-size: 5.25rem;
+        padding: 0;
+        text-align: center;
+        /* border: 1rem black solid; */
+    }
+
+    .bread, .cheese{
+        display: none;
+    }
+
+
+    .bothMobile{
+        display: flex;
+        justify-content: center;
+    }
+    .breadMobile, .cheeseMobile{
+        display: inline;
+    }
+    
+ 
+
+
 }
