@@ -58,6 +58,10 @@
         /* border: red 2px solid; */
     }
 
+    .logo{
+        padding-left: 1.5rem;
+    }
+
     .centerLinks, .rightButtonComponent{
         display: none;
     }
@@ -66,20 +70,30 @@
         display: flex;
         flex-direction: column;
         position: fixed;
-        align-items: center;
+        top: 70px;
+        align-items: flex-end;
+        padding-right: 2.5rem;
+        padding-bottom: 2rem;
+        /* border-radius: 0 0 2rem 2rem;; */
+        /* padding-left: 10rem; */
         width: 100%;
         /* height: calc(100vh - 70px); */
-        top: 70px;
         color: black;
         background-color:  rgb(241, 237, 237);
+        /* border: 2px solid green; */
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
 
     .navbarContainer{
+        padding-right: 2rem;
         /* border: 2px green solid; */
     }
 
+
     .showLinks > a {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+        /* border: 2px purple solid; */
+        /* width: 7rem; */
     }
 }
 
