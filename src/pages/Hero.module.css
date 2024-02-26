@@ -5,7 +5,7 @@
     min-height: calc(100vh - 8rem);
     gap: 2.25rem;
     padding-top: 4rem;
-    background-color: rgba(241, 237, 237);
+    /* background-color: rgba(241, 237, 237); */
 
 }
 
@@ -17,9 +17,6 @@
 }
 
 .h1Container, .imageAndTextContainer{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     /* border: 4px black dotted; */
     width: 100%;
     max-width: var(--max-width);
@@ -34,6 +31,10 @@
 .imgContainer{
     width: 50%;
     /* border: purple 4px solid; */
+}
+
+.chefHand{
+    width: 100%;
 }
 
 .imageAndTextContainer{
@@ -74,12 +75,14 @@
 .bestPlaceHash{
     color: green;
     font-size: 1.75rem;
-    /* border: 4px lightblue solid; */
+    /* border: 4px lightblue solid;*/
+
 }
 
 .bestPlacePara{
     font-size: 1.3rem;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     /* border: 4px green solid; */
 }
 
@@ -89,6 +92,10 @@
     padding: 1.25rem;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.orangeButtonComponent{
+    /* border: black 2px solid; */
 }
 
 
@@ -114,10 +121,8 @@
 }
 
 .bigNumWords{
-    display: flex;
-    flex-direction: column;
     line-height: 1.3rem;
-    /* border: 2px black solid; */
+    border: 2px black solid;
     padding-right: 1.5rem; 
 }
 
@@ -144,8 +149,8 @@
 /* THIRD CHILD IN rightOfImgContainer */
 
 .mouseContainer{
+    display: flex;
     /* border: 4px brown solid; */
-    width: fit-content;
 }
 
 
@@ -182,24 +187,21 @@
 
     .bestPlaceAllContainer{
         /* border: 4px pink solid; */
+        align-items: center;
         gap: 2rem;
     }
 
     .bestPlaceHash{
-        text-align: center;
-        /* margin: 0 auto; */
         /* border: black 4px solid; */
     }
 
     .bestPlacePara{
         /* border: yellow 4px solid; */
         padding-left: 3rem;
-        width: 100%;
     }
 
     .orangeButtonComponent{
         /* border: red 4px solid; */
-        text-align: center;
     }
 
     .customerContainer{
@@ -209,7 +211,8 @@
 
     .mouseContainer{
         /* border: grey 4px solid; */
-        margin: 0 auto;
+        justify-content: center;
+        width: 100%
     }
 
 

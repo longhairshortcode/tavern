@@ -21,7 +21,7 @@ function Hero() {
             <div className={style.rightOfImgContainer}>
                 <div className={style.bestPlaceAllContainer}>
                     <p className={style.bestPlaceHash}>#best place</p>
-                    {/* do i put br or css (shorten width) to make the para cut at the correct spots? */}
+                    {/* do i put br or css (shorten width) to make the para cut at the correct spots? 2) should elemements width be 100% or fit the content? */}
                     <p className={style.bestPlacePara}>We specialize in chef-inspired fast casual cuisine from all over the Mediterranean. Our unique menu features Greek classics.</p>
                     <div className={style.orangeButtonComponent}>
                         <StartOrder/>
