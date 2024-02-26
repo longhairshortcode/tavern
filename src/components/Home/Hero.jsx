@@ -1,10 +1,10 @@
-import StartOrder from "../common/StartOrder"
+import StartOrder from "../../common/StartOrder"
 import style from "./Hero.module.css"
-import chefHand from "../assets/chefHand.png"
-import bread from "../assets/bread.png"
-import cheese from "../assets/cheese.png"
-import mouse from "../assets/mouse.png"
-import customerPic from "../assets/customerPic.png"
+import chefHand from "../../assets/chefHand.png"
+import bread from "../../assets/bread.png"
+import cheese from "../../assets/cheese.png"
+import mouse from "../../assets/mouse.png"
+import customerPic from "../../assets/customerPic.png"
 
 function Hero() {
   return (

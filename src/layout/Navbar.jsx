@@ -30,7 +30,7 @@ function Navbar() {
    <nav className={style.componentContainer}> 
     <div className={style.navbarContainer}>
         <div className={style.leftLogo}>
-            <NavLink to="/herohome"><img className={style.logo} src={logo} alt="company logo"></img></NavLink>
+            <NavLink to="/"><img className={style.logo} src={logo} alt="company logo"></img></NavLink>
         </div>
     {/* First put the state here, if state is true, put state's class name to render the class' css style */}
         <div className={`${style['centerLinks']} ${showLinks ? style['showLinks'] : ""}`}>

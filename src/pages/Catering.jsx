@@ -1,5 +1,5 @@
 
-function About() {
+function Catering() {
   return (
     <div>
       
@@ -7,4 +7,4 @@ function About() {
   )
 }
 
-export default About
+export default Catering
