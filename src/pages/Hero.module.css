@@ -122,7 +122,7 @@
 
 .bigNumWords{
     line-height: 1.3rem;
-    border: 2px black solid;
+    /* border: 2px black solid; */
     padding-right: 1.5rem; 
 }
 

@@ -7,5 +7,6 @@
 has position fixed, to start 80px below top */
 body{
     padding-top: 8rem;
+    background-color: rgba(241, 237, 237);
   }
 
