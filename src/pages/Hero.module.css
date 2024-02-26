@@ -88,11 +88,9 @@
     width: 140px;
     padding: 1.25rem;
     font-size: 1rem;
+    cursor: pointer;
 }
 
-.orangeButtonComponent{
-    /* border: 4px black solid; */
-}
 
 .customerContainer{
     display: flex;

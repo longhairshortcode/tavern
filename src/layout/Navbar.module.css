@@ -37,11 +37,50 @@
 .rightButtonComponent > button{
   background-color: black;
   font-size: 1rem;
-  padding: 1rem 2rem; 
+  padding: 1rem 2rem;
+  cursor: pointer; 
 }
 
-.logo{
-    /* border: 4px red solid; */
+/* .logo{
+    /* border: 4px red solid;
+ } */
+
+.burgerOrXIcon{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px){
+    .burgerOrXIcon{
+        display: block;
+        color: green;
+        /* border: red 2px solid; */
+    }
+
+    .centerLinks, .rightButtonComponent{
+        display: none;
+    }
+
+    .showLinks{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        /* height: calc(100vh - 70px); */
+        top: 70px;
+        color: black;
+        background-color:  rgb(241, 237, 237);
+    }
+
+    .navbarContainer{
+        /* border: 2px green solid; */
+    }
+
+    .showLinks > a {
+        font-size: 2.5rem;
+    }
 }
 
 

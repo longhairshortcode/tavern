@@ -21,7 +21,7 @@ function Hero() {
             <div className={style.rightOfImgContainer}>
                 <div className={style.bestPlaceAllContainer}>
                     <p className={style.bestPlaceHash}>#best place</p>
-                    {/* do i put br or css fo make the para cut at the correct spots? */}
+                    {/* do i put br or css (shorten width) to make the para cut at the correct spots? */}
                     <p className={style.bestPlacePara}>We specialize in chef-inspired fast casual cuisine from all over the Mediterranean. Our unique menu features Greek classics.</p>
                     <div className={style.orangeButtonComponent}>
                         <StartOrder/>
@@ -34,12 +34,12 @@ function Hero() {
                         <p className={style.bigNumWords}>Happy <br/> Customer</p>
                     </div>
                     <div className={style.rightCustomerContainer}>
-                        <img clasName={style.customerPic} src={customerPic} alt="pic of customer"></img>
+                        <img className={style.customerPic} src={customerPic} alt="pic of customer"></img>
                         <p className={style.customerPicWords}>"best ever place to eat your favorite delicious food"</p>
                     </div>
                 </div>
                 <div className={style.mouseContainer}>
-                        <img clasName={style.mousePic} src={mouse} alt="mouse icon"></img>
+                        <img className={style.mousePic} src={mouse} alt="mouse icon"></img>
                 </div>
             </div>
         </div>
