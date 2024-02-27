@@ -159,6 +159,27 @@
 }
 
 
+@media screen and (max-width: 760px){
+    .h1Container{
+        /* border: hotpink 2px solid; */
+        padding: 0 2rem;
+    }
+
+    .h1Large{
+        font-size: 6rem;
+        /* border: 2px purple solid; */
+        text-align: center;
+
+    }
+
+    .imageAndTextContainer{
+        padding: 0 2rem;
+    }
+
+    .componentContainer{
+        gap: 5rem;
+    }
+}
 
 @media screen and (max-width: 480px){
 
@@ -215,15 +236,7 @@
         width: 100%
     }
 
-
-
-
-
-
-
-
     /* //fine */
-
     .h1Large{
         font-size: 5.25rem;
         padding: 0;
@@ -243,6 +256,8 @@
     .breadMobile, .cheeseMobile{
         display: inline;
     }
+
+
     
  
 

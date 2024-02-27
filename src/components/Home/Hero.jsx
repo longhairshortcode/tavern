@@ -10,7 +10,7 @@ function Hero() {
   return (
     <div className={style.componentContainer}>
         <div className={style.h1Container}>
-            <h1 className={style.h1Large}>Food That <img className={style.bread} src={bread}></img> Tastes <br/> Like A Revelation <img className={style.cheese} src={cheese}></img></h1>
+            <h1 className={style.h1Large}>Food That <img className={style.bread} src={bread}></img> Tastes Like A Revelation <img className={style.cheese} src={cheese}></img></h1>
             <p className={style.bothMobile}> <img className={style.breadMobile} src={bread}></img><img className={style.cheeseMobile} src={cheese}></img></p>
         </div>
         <div className={style.imageAndTextContainer}>
