@@ -181,6 +181,46 @@
     }
 }
 
+@media screen and (min-width: 481px) and (max-width: 646px){
+    
+    .h1Large{
+        font-size: 5rem;
+    }
+    
+    .imageAndTextContainer{
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+        /* border: 2px hotpink solid; */
+    }
+
+    .rightOfImgContainer{
+        width: 100%;
+        /* border: yellow 3px solid; */
+        align-items: center;
+    }
+
+    .imgContainer{
+        display: flex;
+        width: 100%;
+        /* border: black 2px solid; */
+        justify-content: center;
+    }
+
+    .customerContainer{
+        justify-content: center;
+    }
+
+    .chefHand{
+        width: 80%;
+        padding: 0 auto;
+    }
+
+    .imgContainer{
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 480px){
 
     .imgContainer{
@@ -257,7 +297,22 @@
         display: inline;
     }
 
+}
 
+    @media screen and (max-width: 320px){
+
+        .imgContainer{
+            display: flex;
+            justify-content: center;
+            /* border: 2px red solid; */
+            width: 100%;
+        }
+        
+        .imageAndTextContainer{
+            flex-direction: column;
+            gap: 5rem;
+            /* padding: 50px; */
+        }
     
  
 

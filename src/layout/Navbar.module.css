@@ -52,47 +52,85 @@
 
 @media screen and (max-width: 760px){
     .navbarContainer{
-        /* border: purple 2px solid; */
-        padding: 0 1rem;
+        /* border: red solid 2px; */
+        padding-left: 2rem;
+        padding-right: 2.5rem;
+    }
+
+    .logo{
+        /* padding-left: 1rem; */
+        /* border: 2px orange solid; */
+    }
+
+    .centerLinks{
+        /* border: blue 2px solid; */
+        margin-left: 2rem;
+    }
+
+    .rightButtonComponent{
+        /* border: yellow 2px solid; */
     }
 }
 
+@media screen and (min-width: 481px) and (max-width: 599px){
+    .centerLinks, .rightButtonComponent{
+        display: none;
+    }
 
+    .burgerOrXIcon{
+        display: block;
+        color: green;
+    }
+    .showLinks{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 7.5rem;
+        align-items: flex-end;
+        background-color: rgb(241, 237, 237);
+        padding-bottom: 4rem;
+        border: 2px red solid;
+        width: 100%;
+        padding-right: 7rem;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    .navbarContainer{
+     border: 2px green solid;
+ }
+
+}
 @media screen and (max-width: 480px){
     .burgerOrXIcon{
         display: block;
         color: green;
         /* border: red 2px solid; */
     }
-
     .logo{
         padding-left: 1.5rem;
     }
-
     .centerLinks, .rightButtonComponent{
         display: none;
     }
-
     .showLinks{
         display: flex;
         flex-direction: column;
         position: fixed;
         top: 70px;
+        /* right: 0px; */
         align-items: flex-end;
-        padding-right: 2.5rem;
+        padding-right: 4.5rem;
         padding-bottom: 2rem;
-        /* border-radius: 0 0 2rem 2rem;; */
-        /* padding-left: 10rem; */
         width: 100%;
         /* height: calc(100vh - 70px); */
         color: black;
         background-color:  rgb(241, 237, 237);
-        /* border: 2px solid green; */
+        /* border: 5px solid green; */
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
 
     .navbarContainer{
-        padding-right: 2rem;
+           padding: 0 1rem;
         /* border: 2px green solid; */
     }
 
