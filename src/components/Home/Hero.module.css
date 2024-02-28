@@ -5,8 +5,8 @@
     min-height: calc(100vh - 8rem);
     gap: 2.25rem;
     padding-top: 4rem;
-    background-color: rgba(241, 237, 237);
-
+    /* background-color: rgba(241, 237, 237); */
+    background-color: green;
 }
 
 .h1Large{
@@ -198,6 +198,7 @@
         width: 100%;
         /* border: yellow 3px solid; */
         align-items: center;
+        padding: 0;
     }
 
     .imgContainer{
@@ -218,6 +219,12 @@
 
     .imgContainer{
         margin: 0 auto;
+    }
+
+    .bestPlaceAllContainer{
+        align-items: center;
+        /* border: blue 2px solid; */
+        width: 100%;
     }
 }
 
@@ -312,6 +319,10 @@
             flex-direction: column;
             gap: 5rem;
             /* padding: 50px; */
+        }
+
+        .h1Large{
+            font-size: 4rem;
         }
     
  

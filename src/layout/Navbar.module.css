@@ -7,6 +7,7 @@
     /* gap */
     width: 100%;
     background-color: rgb(241, 237, 237);
+    z-index: 5;
 
 }
 
@@ -86,17 +87,18 @@
         flex-direction: column;
         position: fixed;
         top: 7.5rem;
+        right: 0;
         align-items: flex-end;
         background-color: rgb(241, 237, 237);
         padding-bottom: 4rem;
-        border: 2px red solid;
-        width: 100%;
+        /* border: 2px red solid; */
+        width: 90%;
         padding-right: 7rem;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
 
     .navbarContainer{
-     border: 2px green solid;
+     /* border: 2px green solid; */
  }
 
 }

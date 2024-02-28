@@ -35,7 +35,7 @@ function Navbar() {
     {/* First put the state here, if state is true, put state's class name to render the class' css style */}
         <div className={`${style['centerLinks']} ${showLinks ? style['showLinks'] : ""}`}>
             <NavLink to="/about" onClick={closeLinkMenu}>About</NavLink>
-            <NavLink to="/menu" onClick={closeLinkMenu}>Menu</NavLink>
+            <NavLink to="/" onClick={closeLinkMenu}>Menu</NavLink>
             <NavLink to="/catering" onClick={closeLinkMenu}>Catering</NavLink>
             <NavLink to="/location" onClick={closeLinkMenu}>Location</NavLink>
             <NavLink to="/contact" onClick={closeLinkMenu}>Contact</NavLink>

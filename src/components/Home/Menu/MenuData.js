@@ -1,0 +1,66 @@
+import pizza from "../../../assets/pizza.jpg"
+import steak from "../../../assets/steak.webp"
+import salad from "../../../assets/salad.jpeg"
+import noodles from "../../../assets/noodles.jpeg"
+import masala from "../../../assets/masala.jpeg"
+import tacos from "../../../assets/tacos.jpeg"
+
+
+const MenuData = [
+    {
+     id: 1,   
+     img: pizza,
+     dishName: "Pizza",
+     dishType:"Italian",
+     dishTime:"22 mins",
+     dishDescription:"This is a individual sized pizza with lots of pineapple.",
+     dishPrice:"$2.00",
+    },
+    {
+     id: 2,   
+     img: steak,
+     dishName: "Steak",
+     dishType:"American",
+     dishTime:"6 min",
+     dishDescription:"This is a 2 oz plant-based steak with roasted vegetables.",
+     dishPrice:"$6.00",
+    },
+    {
+     id: 3,   
+     img: salad,
+     dishName: "Salad",
+     dishType:"Greek",
+     dishTime:"3 mins",
+     dishDescription:"This is a huge Greek greens and veggie mixed salad with homemade dressing.",
+     dishPrice:"$3.00",
+    },
+    {
+     id: 4,   
+     img: noodles,
+     dishName: "Noodles",
+     dishType:"Asian-Fusion",
+     dishTime:"8 mins",
+     dishDescription:"A bowl of East-Asian noodles with South-Asian veggies in a homemade sauce.",
+     dishPrice:"$4.00",
+    },
+    {
+     id: 5,   
+     img: masala,
+     dishName: "masala",
+     dishType:"Indian",
+     dishTime:"10 mins",
+     dishDescription:"Chickpeas and a spicy tomato sauce with ten Indian spices",
+     dishPrice:"$4.00",
+    },
+    {
+     id: 6,   
+     img: tacos,
+     dishName: "tacos",
+     dishType:"Mexican",
+     dishTime:"6 min",
+     dishDescription:"Three tacos with five vegetable of the week, special sauce, and avocado.",
+     dishPrice:"$5.00",
+    },
+]
+
+export default MenuData 

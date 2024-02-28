@@ -1,0 +1,155 @@
+.popularContainer{
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: var(--padding);
+    /* border: red 2px dotted; */
+    /*background-color: red; */
+}
+
+.allPopPicsAndTextContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+.popularTitle{
+    margin-bottom: 2rem;
+    /* border: green 2px solid; */
+
+}
+.popImgAndTxtSingle{
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    width: 100%;
+    max-width: 25.5rem;
+    /* border: 2px blue solid; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 2rem;
+    overflow: hidden;
+    height: 205px;
+    /* border: 4px red solid */
+}
+
+.popImgOnTop{
+    position: relative;
+    /* border: black solid 6px; */
+    height: 100px;
+    overflow: hidden;
+}
+
+.popTextBelow{
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    height: 105px;
+    padding: 0 2rem;
+    /* margin-bottom: 2rem; */
+    /* border: blue 6px solid; */
+}
+
+.popImg{
+    width: 100%;
+    /* border: lightblue 3px solid; */
+}
+
+.dishName{
+    position: absolute;
+    /* border: blue 4px solid; */
+    bottom: .5rem;
+    left: 2rem;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
+}
+
+.typeAndTime{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    /* border: red 2px solid; */
+}
+
+
+
+.type{
+    background-color: lightgreen;
+    padding: 7px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3rem;
+    margin-right: 1rem;
+}
+
+
+
+.time{
+    /* display: flex;
+    align-items: center; */
+    background-color: rgb(251, 189, 43);
+    padding: 8px 5px;
+    border-radius: 3rem;
+    font-weight: bold;
+}
+
+
+
+.enlargeMan{
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.dishStars{
+    margin-top: .5rem;
+    color: goldenrod;
+    font-size: 2rem;
+    /* border: red 2px solid; */
+}
+
+.dishStars, .dishDescription{
+    width: 100%;
+    text-align: center;
+}
+
+.dishDescription{
+    /* border: purple 2px solid; */
+    margin-top: .5rem;
+    /* padding: 0 2rem; */
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.priceNButContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+    margin-top: .7rem;
+    /* border: 2px green solid; */
+    width: 100%;
+}
+
+.dishPrice, .dishAddButton{
+    font-weight: bold;
+}
+
+.dishPrice{
+    /* margin-left: 1rem; */
+}
+
+.dishAddButton{
+    border: 2px solid goldenrod;
+    border-radius: 9px;
+    font-size: .8rem;
+    padding: 5px 8px;
+    cursor: pointer;
+    
+}
+
