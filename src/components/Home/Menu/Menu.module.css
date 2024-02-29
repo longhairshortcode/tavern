@@ -149,13 +149,25 @@
     
 }
 
+@media screen and (max-width: 760px){
+
+
+    .allPopPicsAndTextContainer{
+        gap: 4.5rem;
+    }
+
+    .popImgAndTxtSingle{
+        max-width: 275px;
+    }
+}
+
 @media screen and (max-width: 480px){
 
    .popImgAndTxtSingle{
     width: 100%;
     max-width: 35.5rem;
     height: 300px;
-    border: 4px red solid
+    /* border: 4px red solid */
 }
 
 .popImgOnTop{
@@ -167,10 +179,16 @@
     padding: 0 2rem;
 }
 
-
-
+.dishStars{
+    /* border: 2px red solid; */
+}
+.dishDescription{
+    /* border: 2px blue solid; */
+    height: 37px;
+}
 
 .priceNButContainer{
+    /* border: 2px green solid; */
     padding: 0 8rem;
 }
 

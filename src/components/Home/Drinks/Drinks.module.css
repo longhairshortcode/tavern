@@ -141,6 +141,15 @@ typeAndTime? */
     /* background-color: red; */
 }
 
+@media screen and (max-width: 760px){
+    .allDrinksPicsNTexContainer{
+        gap:4.5rem;
+    }
+
+    .drinkImgAndTxtSingle{
+        max-width: 275px;
+    }
+}
 
 @media screen and (max-width: 480px){
 
@@ -148,7 +157,7 @@ typeAndTime? */
      width: 100%;
      max-width: 35.5rem;
      height: 300px;
-     border: 4px red solid
+     /* border: 4px red solid */
  }
  
  .drinkPicTopContainer{
