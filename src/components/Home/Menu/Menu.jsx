@@ -1,5 +1,5 @@
 import { RiStarSLine } from "react-icons/ri";
-import { LiaWalkingSolid } from "react-icons/lia";
+import { LiaWalkingSolid } from "react-icons/lia";   
 import style from "./Menu.module.css"
 import MenuData from "./MenuData";
 

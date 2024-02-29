@@ -21,8 +21,8 @@
 
 }
 .popImgAndTxtSingle{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     /* position: relative; */
     width: 100%;
     max-width: 25.5rem;
@@ -140,9 +140,6 @@
     font-weight: bold;
 }
 
-.dishPrice{
-    /* margin-left: 1rem; */
-}
 
 .dishAddButton{
     border: 2px solid goldenrod;
