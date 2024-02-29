@@ -6,8 +6,9 @@
     /* background-color: red; */
 }
 
-.allDrinksPicsNTextContainer{
-    background-color: blue;
+.allDrinksPicsNTexContainer{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -21,7 +22,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 25.5rem;
-    height: 200px;
+    height: 205px;
     /* border: lime 5px solid; */
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -113,6 +114,7 @@ typeAndTime? */
 
 .drinkDescription{
     font-size: 1.1rem;
+    line-height: 1.6rem;
     /* background-color: lime; */
 }
 
@@ -140,3 +142,25 @@ typeAndTime? */
 }
 
 
+@media screen and (max-width: 480px){
+
+    .drinkImgAndTxtSingle{
+     width: 100%;
+     max-width: 35.5rem;
+     height: 300px;
+     border: 4px red solid
+ }
+ 
+ .drinkPicTopContainer{
+     height: 190px;
+ }
+ 
+ .drinkBelowPicContainer{
+     height: 110px;
+ }
+ 
+ .priceNButtonContainer{
+     padding: 0 8rem;
+ }
+ 
+ }
