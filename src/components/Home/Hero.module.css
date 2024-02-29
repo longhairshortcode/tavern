@@ -94,10 +94,6 @@
     cursor: pointer;
 }
 
-.orangeButtonComponent{
-    /* border: black 2px solid; */
-}
-
 
 .customerContainer{
     display: flex;
@@ -229,6 +225,10 @@
 }
 
 @media screen and (max-width: 480px){
+
+    .componentContainer{
+        margin-bottom: 5rem;
+    }
 
     .imgContainer{
         display: flex;
