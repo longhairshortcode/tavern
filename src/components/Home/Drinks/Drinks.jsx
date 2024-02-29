@@ -1,5 +1,5 @@
 import style from "./Drinks.module.css"
-import pizza from "../../../assets/pizza.jpg"
+// import pizza from "../../../assets/pizza.jpg"
 import { RiStarSLine } from "react-icons/ri";
 import { LiaWalkingSolid } from "react-icons/lia";  
 
@@ -14,7 +14,7 @@ function Drinks() {
             <div className={style.drinkImgAndTxtSingle}>
                 
                 <div className={style.drinkPicTopContainer}>
-                    <img className={style.drinkImage} src={pizza}/> 
+                    <img className={style.drinkImage} src="https://images.pexels.com/photos/7603330/pexels-photo-7603330.jpeg" alt="hand holding a margarita"/> 
                     <h3 className={style.drinkTitle}>Drink</h3>
                     <p className={style.drinkTypeAndTime}>
                         <span className={style.drinkType}>Cocktail</span><span className={style.drinkTime}><LiaWalkingSolid className={style.enlargeMan} /> 1 min</span>

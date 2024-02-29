@@ -3,6 +3,8 @@
     max-width: var(--max-width);
     margin: auto;
     padding: var(--padding);
+    /* border: 2px black solid; */
+    margin-bottom: 2rem;
     /* border: red 2px dotted; */
     /*background-color: red; */
 }
