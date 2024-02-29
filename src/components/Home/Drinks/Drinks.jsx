@@ -1,7 +1,8 @@
 import style from "./Drinks.module.css"
 // import pizza from "../../../assets/pizza.jpg"
 import { RiStarSLine } from "react-icons/ri";
-import { LiaWalkingSolid } from "react-icons/lia";  
+import { LiaWalkingSolid } from "react-icons/lia";
+import DrinksData from "./Drink";  
 
 
 function Drinks() {
@@ -10,32 +11,34 @@ function Drinks() {
         <h2 className={style.drinksTitle}>Popular Drinks</h2>
         <div className={style.allDrinksPicsNTexContainer}>
             {/* map here */}
-            {/* return () */}
-            <div className={style.drinkImgAndTxtSingle}>
+            
+            {DrinksData.map((drink)=>{
+                return(
+                    <div className={style.drinkImgAndTxtSingle}>
                 
-                <div className={style.drinkPicTopContainer}>
-                    <img className={style.drinkImage} src="https://images.pexels.com/photos/7603330/pexels-photo-7603330.jpeg" alt="hand holding a margarita"/> 
-                    <h3 className={style.drinkTitle}>Drink</h3>
-                    <p className={style.drinkTypeAndTime}>
-                        <span className={style.drinkType}>Cocktail</span><span className={style.drinkTime}><LiaWalkingSolid className={style.enlargeMan} /> 1 min</span>
-                    </p>
-                </div>
-
-                <div className={style.drinkBelowPicContainer}>
-                    <div className={style.stars}>
-                        <RiStarSLine /> <RiStarSLine /> <RiStarSLine /> <RiStarSLine /> <RiStarSLine />
+                    <div className={style.drinkPicTopContainer}>
+                        <img className={style.drinkImage} src={drink.img} alt="a margarita"/> 
+                        <h3 className={style.drinkTitle}>{drink.drinkName}</h3>
+                        <p className={style.drinkTypeAndTime}>
+                            <span className={style.drinkType}>{drink.drinkType}</span><span className={style.drinkTime}><LiaWalkingSolid className={style.enlargeMan} /> {drink.drinkTime}</span>
+                        </p>
                     </div>
-                    <p className={style.drinkDescription}>This is a classic margarita made with lemon, lime, and coconut sap.</p>
-                    <div className={style.priceNButtonContainer} >
-                        <p className={style.drinkPrice}>$8.00</p>
-                        <button className={style.drinkAddButton}>Add To Cart</button>
-                    </div>
-                    
-                </div>
-            </div>
-        
-        
-        
+    
+                    <div className={style.drinkBelowPicContainer}>
+                        <div className={style.stars}>
+                            <RiStarSLine /> <RiStarSLine /> <RiStarSLine /> <RiStarSLine /> <RiStarSLine />
+                        </div>
+                        <p className={style.drinkDescription}>{drink.drinkDescription}</p>
+                        <div className={style.priceNButtonContainer} >
+                            <p className={style.drinkPrice}>{drink.drinkPrice}</p>
+                            <button className={style.drinkAddButton}>Add To Cart</button>
+                        </div>
+                        </div>
+                </div> 
+                )
+            })
+            }
+            
         </div>
     </section>
 

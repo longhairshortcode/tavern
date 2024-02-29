@@ -9,6 +9,8 @@
 .allDrinksPicsNTexContainer{
     display: flex;
     justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 
@@ -43,7 +45,7 @@
 
 .drinkTitle{
     position: absolute;
-    bottom: 0;
+    bottom: .5rem;
     margin-left: 2rem;
     color: white;
     text-shadow: 
@@ -116,6 +118,7 @@ typeAndTime? */
     font-size: 1.1rem;
     line-height: 1.6rem;
     /* background-color: lime; */
+    height: 3rem;
 }
 
 .priceNButtonContainer{
