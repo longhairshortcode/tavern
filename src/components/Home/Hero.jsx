@@ -43,6 +43,7 @@ function Hero() {
                 </div>
             </div>
         </div>
+        <div className={style.lineDivider}></div>
     </div>
   )}
 
