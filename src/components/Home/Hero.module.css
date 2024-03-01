@@ -159,7 +159,7 @@
     padding: 0 var (--padding);
     width: 100%;
     height: .5rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
     background-color: green;
 }
 
@@ -236,7 +236,8 @@
 @media screen and (max-width: 480px){
 
     .componentContainer{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
+        gap: 2rem;
     }
 
     .imgContainer{
@@ -250,6 +251,8 @@
         flex-direction: column;
         gap: 5rem;
         /* border: 2px black solid; */
+        padding-bottom: 0;
+        margin-bottom: 0;
         /* padding: 50px; */
     }
 
@@ -305,6 +308,12 @@
     }
     .breadMobile, .cheeseMobile{
         display: inline;
+    }
+
+    .lineDivider{
+        margin-top: 0rem;
+        /* border: 2px red solid; */
+        background-color: green;
     }
 
 }
