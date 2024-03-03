@@ -3,6 +3,7 @@ import { LiaWalkingSolid } from "react-icons/lia";
 import style from "./Menu.module.css"
 import MenuData from "./MenuData";
 import { useState } from "react"
+import { AiOutlineClose } from "react-icons/ai" 
 
 function Menu() {
 
@@ -11,8 +12,10 @@ function Menu() {
   return (
     <>
         { zoomDish &&
+
         <div className={style.zoomGrandPContainer}>
             <div className={style.zoomParentContainer}>
+                <AiOutlineClose className={style.closeIcon} onClick={()=>setZoomDish("")} size={15}/>
                 <img className={style.zoomDish} src={zoomDish}/>
             </div>    
         </div>

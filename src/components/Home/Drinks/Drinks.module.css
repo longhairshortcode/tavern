@@ -156,10 +156,10 @@ typeAndTime? */
 
 .priceNButtonContainer{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    /* background-color: black; */
-
-
+    height: 2rem;
+    width: 100%;
 }
 
 .drinkPrice{

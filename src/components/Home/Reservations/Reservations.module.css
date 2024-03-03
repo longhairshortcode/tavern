@@ -1,0 +1,54 @@
+.reservationsContainer{
+    width: 100%;
+    max-width: 600px;
+    /* padding: var(--padding); */
+    /* dif between below and 0 auto, auto 0? */
+    margin: auto;
+    border: 2px solid black;    
+}
+
+.textAndImgContainer{
+   display: flex;
+    border: 6px red solid;
+    max-height: 300px;
+
+}
+
+.leftTextContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    border: 2px blue solid;
+    width: 50%; 
+}
+
+.resTitle{
+    font-size: 3rem;
+}
+
+.resPara{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.resButton{
+background-color: goldenrod;
+border-radius: 3px;
+font-weight: bold;
+width: 140px;
+padding: 1.25rem;
+font-size: 1rem;
+cursor: pointer;
+}
+
+.rightImgContainer{
+    border: 2px green solid;
+    width: 50%;
+}
+
+.cheersImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

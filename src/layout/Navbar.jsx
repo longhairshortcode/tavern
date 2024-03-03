@@ -4,7 +4,7 @@ import { useState } from "react"
 import StartOrder from '../common/StartOrder'
 import logo from '../assets/logo.png'
 import { HiMenu } from "react-icons/hi"
-import { AiOutlineClose } from "react-icons/ai"
+import { AiOutlineClose } from "react-icons/ai"  
 
 
 function Navbar() {
