@@ -3,14 +3,15 @@
     max-width: 600px;
     /* padding: var(--padding); */
     /* dif between below and 0 auto, auto 0? */
-    margin: auto;
-    border: 2px solid black;    
+    margin: 6rem auto;
+    /* border: 2px solid black;     */
 }
 
 .textAndImgContainer{
    display: flex;
-    border: 6px red solid;
+    /* border: 6px red solid; */
     max-height: 300px;
+    gap: 1.5rem;
 
 }
 
@@ -18,32 +19,34 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 1rem;
-    border: 2px blue solid;
+    gap: 2rem;
+    /* border: 2px blue solid; */
     width: 50%; 
+    padding-top: 2rem;
 }
 
 .resTitle{
-    font-size: 3rem;
+    font-size: 2.25rem;
+    line-height: 3rem;
 }
 
 .resPara{
     font-size: 1.25rem;
-    line-height: 1.75rem;
+    line-height: 2rem;
 }
 
 .resButton{
 background-color: goldenrod;
-border-radius: 3px;
+border-radius: 47px;
 font-weight: bold;
-width: 140px;
+width: 115px;
 padding: 1.25rem;
 font-size: 1rem;
 cursor: pointer;
 }
 
 .rightImgContainer{
-    border: 2px green solid;
+    /* border: 2px green solid; */
     width: 50%;
 }
 
