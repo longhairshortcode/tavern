@@ -9,7 +9,6 @@
 
 .textAndImgContainer{
    display: flex;
-    /* border: 6px red solid; */
     max-height: 300px;
     gap: 1.5rem;
 
