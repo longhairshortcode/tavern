@@ -1,0 +1,44 @@
+.componentContainer{
+    width: 100%;
+    max-width: var(--max-width);
+    padding:var(--padding);
+    margin: 0 auto;
+    /* height: 100%; */
+    /* max-height: 200px; */
+    height: 25rem;
+    border: 2px solid red; 
+}
+
+.reviewsContainer{
+    width: 100%;
+}
+
+.titleAndArrowsContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.arrowsContainer{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: fit-content;
+}
+
+
+.leftArrowIcon, .rightArrowIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 2px orange;
+    color: black;
+    width: 2rem;
+    /* max-width: 3rem; */
+    height: 2rem;
+    /* max-height: 3rem; */
+}
+
+
