@@ -32,3 +32,4 @@ const ReviewsData = [
      message: "This place is lovely, it is my favorite restaurant because of the fresh ingredients and the best drinks!",
     },
 ]
+export default ReviewsData

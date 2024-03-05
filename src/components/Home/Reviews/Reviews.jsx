@@ -1,6 +1,7 @@
 import style from "./Reviews.module.css"
 import { MdArrowBack } from "react-icons/md";
 import { MdArrowForward } from "react-icons/md";
+import ReviewsData from "./ReviewsData"
 
 function Reviews() {
   return (
