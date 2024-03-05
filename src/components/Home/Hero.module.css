@@ -217,6 +217,8 @@
         justify-content: center;
     }
 
+    
+
     .chefHand{
         width: 80%;
         padding: 0 auto;
@@ -276,11 +278,28 @@
     .bestPlacePara{
         /* border: yellow 4px solid; */
         padding-left: 3rem;
+        font-size: 1.5rem;
     }
 
     .customerContainer{
         /* border: 4px blue solid; */
+        flex-direction: column;
         justify-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .rightCustomerContainer{
+        padding-left: .2rem;
+        border: none; 
+        width: 100%;
+    }
+
+    .bigNumWords{
+        line-height: 1.3rem;
+        /* border: 2px black solid; */
+        padding-right: .2rem; 
     }
 
     .mouseContainer{
@@ -316,6 +335,23 @@
         background-color: green;
     }
 
+    .bigNumWords{
+        font-size: 1.5rem;
+    }
+
+    .customerPicWords{
+        font-size: 1.5rem;
+        /* border: 2px hotpink solid; */
+        line-height: 1.5rem;
+        max-width: 100%;
+    }
+
+    .orangeButtonComponent > button{
+        font-size: 1.5rem;
+        
+    }
+
+ 
 }
 
     @media screen and (max-width: 320px){

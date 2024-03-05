@@ -45,7 +45,8 @@
 background-color: goldenrod;
 border-radius: 47px;
 font-weight: bold;
-width: 115px;
+max-width: 115px;
+width: 100%;
 padding: 1.25rem;
 font-size: 1rem;
 cursor: pointer;
@@ -69,6 +70,16 @@ cursor: pointer;
         width: 100%;
         max-width: 35.5rem;
         /* border: 2px green solid; */
+    }
+
+    .resPara, .resButton{
+        font-size: 1.5rem;
+    }
+
+    .resButton{
+        width: 100%;
+        max-width: fit-content;
+        margin: 0 auto;
     }
 
     .cheersImg{
