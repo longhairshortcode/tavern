@@ -1,27 +1,29 @@
 import style from "./ReviewsCarousel.module.css"
 import ReviewsData from "./ReviewsData"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+// import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 
-function ReviewsCarousel() {
+function ReviewsCarousel({swiperRef}) {
     return(
         <>
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
+        //   pagination={{
+        //     clickable: true,
+        //   }}
+        //   modules={[Pagination]}
           className="mySwiper"
+          style={{width: "100%"}}
+          ref={swiperRef}
           >
 
             {ReviewsData.map((review)=>{
                 return(
-                    <SwiperSlide>
+                    <SwiperSlide key={review.id}>
                         <div key={review.id} className={style.reviewSingleContainer}>
                             <p className={style.customerMessage}>{review.message}</p>
                             <div className={style.customerPicContainer}>
