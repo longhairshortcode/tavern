@@ -1,7 +1,7 @@
 import style from "./Reviews.module.css"
 import { MdArrowBack } from "react-icons/md";
 import { MdArrowForward } from "react-icons/md";
-import ReviewsData from "./ReviewsData"
+import ReviewsCarousel from "./ReviewsCarousel";
 
 function Reviews() {
   return (
@@ -12,9 +12,10 @@ function Reviews() {
             <div className={style.arrowsContainer} >  
               <button className={style.leftArrowIcon}><MdArrowBack /></button>
               <button className={style.rightArrowIcon}><MdArrowForward /></button>
-            </div>
-          </div>
         </div>
+        </div>
+              <ReviewsCarousel/>
+          </div>
     </section>
   )
 }
