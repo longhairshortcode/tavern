@@ -10,6 +10,7 @@ function Reviews() {
 
   const prev = () => {
     if(swiperRef.current && swiperRef.current.swiper){
+              // what exactly does slidePrev interact with?
       swiperRef.current.swiper.slidePrev();
     } 
   }
@@ -31,6 +32,7 @@ function Reviews() {
               <button onClick={next} className={style.rightArrowIcon}><MdArrowForward /></button>
             </div>
           </div>
+          {/* // why swiperRef here and passed in ReviewsCarousel ? whis is swiperRef written twice? should is be ref={swiperRef?} */}
           <ReviewsCarousel swiperRef={swiperRef}/>
         </div>
     </section>

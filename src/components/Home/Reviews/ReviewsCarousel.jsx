@@ -3,27 +3,42 @@ import ReviewsData from "./ReviewsData"
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';
+// import 'swiper/css/pagination';
 
 
+
+//why is swiperRef passed here?, does is automatically make a swiperRef ref?
 function ReviewsCarousel({swiperRef}) {
     return(
         <>
         <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-        //   pagination={{
-        //     clickable: true,
-        //   }}
-        //   modules={[Pagination]}
+        //   slidesPerView={1}
+          spaceBetween={10}
+          breakpoint = {  {
+            // this is mobile, meaning screens starting at 320 (and up to 479 since the next break is 480)
+            320: {
+              slidesPerView: 1.3,
+              spaceBetween: 20
+            },
+            //tablet
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 10
+            },
+           //desktop
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 10
+            }
+          }} 
           className="mySwiper"
-          style={{width: "100%"}}
+          style={{width: "100%", border: "5px yellow solid"}}
           ref={swiperRef}
           >
-
+{/* what does slideNext/Prev actaully do / touch in this? */}
             {ReviewsData.map((review)=>{
                 return(
-                    <SwiperSlide key={review.id}>
+                    <SwiperSlide style={{ width:"260px", border: "2px solid blue"}} key={review.id}>
                         <div key={review.id} className={style.reviewSingleContainer}>
                             <p className={style.customerMessage}>{review.message}</p>
                             <div className={style.customerPicContainer}>
@@ -44,21 +59,5 @@ export default ReviewsCarousel
 
 
 
-// Responsive breakpoints
-// breakpoints: {
-//     // when window width is >= 320px
-//     320: {
-//       slidesPerView: 2,
-//       spaceBetween: 20
-//     },
-//     // when window width is >= 480px
-//     480: {
-//       slidesPerView: 3,
-//       spaceBetween: 30
-//     },
-//     // when window width is >= 640px
-//     640: {
-//       slidesPerView: 4,
-//       spaceBetween: 40
-//     }
-//   }
+
+
