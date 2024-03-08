@@ -12,7 +12,7 @@ function ReviewsCarousel({swiperRef}) {
     return(
         <>
         <Swiper
-        //   slidesPerView={1}
+          slidesPerView={3}
           spaceBetween={10}
           breakpoint = {  {
             // this is mobile, meaning screens starting at 320 (and up to 479 since the next break is 480)
@@ -32,13 +32,13 @@ function ReviewsCarousel({swiperRef}) {
             }
           }} 
           className="mySwiper"
-          style={{width: "100%", border: "5px yellow solid"}}
+          style={{width: "100%", border: "2px red solid"}}
           ref={swiperRef}
           >
 {/* what does slideNext/Prev actaully do / touch in this? */}
             {ReviewsData.map((review)=>{
                 return(
-                    <SwiperSlide style={{ width:"260px", border: "2px solid blue"}} key={review.id}>
+                    <SwiperSlide style={{ width:"275px", border: "2px solid blue"}} key={review.id}>
                         <div key={review.id} className={style.reviewSingleContainer}>
                             <p className={style.customerMessage}>{review.message}</p>
                             <div className={style.customerPicContainer}>

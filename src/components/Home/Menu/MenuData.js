@@ -14,7 +14,7 @@ const MenuData = [
      dishType:"Italian",
      dishTime:"22 mins",
      dishDescription:"This is a individual sized pizza with lots of pineapple.",
-     dishPrice:"$2.00",
+     dishPrice:"$10.00",
     },
     {
      id: 2,   
@@ -23,7 +23,7 @@ const MenuData = [
      dishType:"American",
      dishTime:"6 min",
      dishDescription:"This is a 2 oz plant-based steak with roasted vegetables.",
-     dishPrice:"$6.00",
+     dishPrice:"$12.00",
     },
     {
      id: 3,   
@@ -32,7 +32,7 @@ const MenuData = [
      dishType:"Greek",
      dishTime:"3 mins",
      dishDescription:"This is a huge Greek greens and veggie mixed salad with homemade dressing.",
-     dishPrice:"$3.00",
+     dishPrice:"$8.00",
     },
     {
      id: 4,   
@@ -41,7 +41,7 @@ const MenuData = [
      dishType:"Asian-Fusion",
      dishTime:"8 mins",
      dishDescription:"A bowl of East-Asian noodles with South-Asian veggies in a homemade sauce.",
-     dishPrice:"$4.00",
+     dishPrice:"$10.00",
     },
     {
      id: 5,   
@@ -50,7 +50,7 @@ const MenuData = [
      dishType:"Indian",
      dishTime:"10 mins",
      dishDescription:"Chickpeas and a spicy tomato sauce with ten Indian spices",
-     dishPrice:"$4.00",
+     dishPrice:"$9.00",
     },
     {
      id: 6,   
@@ -59,7 +59,7 @@ const MenuData = [
      dishType:"Mexican",
      dishTime:"6 min",
      dishDescription:"Three tacos with five vegetable of the week, special sauce, and avocado.",
-     dishPrice:"$5.00",
+     dishPrice:"$9.00",
     },
 ]
 
