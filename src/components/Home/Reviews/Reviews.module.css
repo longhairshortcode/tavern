@@ -9,10 +9,10 @@
 }
 
 .reviewsContainer{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     width: 100%;
-    /* border: solid 2px blue; */
+    /* border: solid 3px hotpink; */
 }
 
 .titleAndArrowsContainer{

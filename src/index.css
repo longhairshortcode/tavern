@@ -10,3 +10,20 @@ body{
     background-color: rgba(241, 237, 237);
   }
 
+
+/* the parent */
+.slick-list {
+    /* border: 2px dotted blue; */
+}
+
+.slick-track{
+  display: flex;
+  /* border: 2px red dotted; */
+}
+
+  /* the slides */
+  .slick-slide {
+    margin-right: 1rem;
+    /* gap: 0rem; */
+    /* border: 4px black dotted; */
+}

@@ -3,24 +3,18 @@ import { MdArrowBack } from "react-icons/md";
 import { MdArrowForward } from "react-icons/md";
 import ReviewsCarousel from "./ReviewsCarousel";
 import { useRef } from "react";
+import Slider from "react-slick";
 
 function Reviews() {
 
-  const swiperRef = useRef(null); 
-
-  const prev = () => {
-    if(swiperRef.current && swiperRef.current.swiper){
-              // what exactly does slidePrev interact with?
-      swiperRef.current.swiper.slidePrev();
-    } 
-  }
+  const sliderRef = useRef(null); 
 
   const next = () => {
-    if(swiperRef.current && swiperRef.current.swiper){
-      swiperRef.current.swiper.slideNext();
-    }
-  } 
-
+    sliderRef.current.slickNext();
+  };
+  const previous = () => {
+    sliderRef.current.slickPrev();
+  };
   
   return (
     <section className={style.componentContainer}>
@@ -28,12 +22,12 @@ function Reviews() {
           <div className={style.titleAndArrowsContainer} >
             <h2 className={style.title}>What Our Customers Say?</h2>
             <div className={style.arrowsContainer} >  
-              <button onClick={prev} className={style.leftArrowIcon}><MdArrowBack /></button>
+              <button onClick={previous} className={style.leftArrowIcon}><MdArrowBack /></button>
               <button onClick={next} className={style.rightArrowIcon}><MdArrowForward /></button>
             </div>
           </div>
           {/* // why swiperRef here and passed in ReviewsCarousel ? whis is swiperRef written twice? should is be ref={swiperRef?} */}
-          <ReviewsCarousel swiperRef={swiperRef}/>
+          <ReviewsCarousel sliderRef={sliderRef}/>
         </div>
     </section>
   )

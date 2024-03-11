@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom"
+import { register } from 'swiper/element/bundle';
 import Navbar from "./layout/Navbar"
 import Footer from "./layout/Footer"
 import Home from "./pages/Home"
@@ -6,6 +7,8 @@ import About from "./pages/About"
 import Catering from "./pages/Catering"
 import Locations from "./pages/Locations"
 import Contact from "./pages/Contact"
+
+register();
 
 function App() {
 
