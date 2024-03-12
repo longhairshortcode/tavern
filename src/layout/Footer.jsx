@@ -10,17 +10,18 @@ function Footer() {
     <footer className={style.componentContainer}>
       <div className={style.topInfoContainer}>
         <div className={style.oneNameAndMission}>
-          <Link><img className={style.logo} src={logo} alt="company logo"></img></Link>
-          <p>A multi-cultural plant-based organic restaurant with elevated flavors. <span className={`${style['bold']} ${style['tagLine']}`}>Taste The World.</span></p>
+        <Link to={"/"}><img className={style.logo} src={logo} alt="company logo"></img></Link>
+          <p>A multi-cultural plant-based organic restaurant with elevated flavors.</p>
+          <p className={`${style['bold']} ${style['tagLine']}`}>Taste The World.</p>
         </div>
         <div className={style.twoExplore}>
           <ul className={style.exploreContainer}>
             <li className={`${style['bold']} ${style['explore']}`}>Explore</li>
-            <li>About</li>
-            <li>Menu</li>
-            <li>Catering</li>
-            <li>Location</li>
-            <li>Contact</li>
+            <li><Link to={"/about"}>About</Link></li>
+            <li><Link to={"/menu"}>Menu</Link></li>
+            <li><Link to={"/catering"}>Catering</Link></li>
+            <li><Link to={"/location"}>Location</Link></li>
+            <li><Link to={"/contact"}>Contact</Link></li>
           </ul>
         </div>
         <div className={style.threeVisit}>
