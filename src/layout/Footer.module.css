@@ -1,0 +1,145 @@
+.componentContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem; 
+    max-width: var(--max-width);
+    padding: var(--padding);
+    height: 30rem;
+    margin: 3rem auto 0 auto;
+    background-color: rgb(242, 231, 231);
+    /* border: 2px red solid; */
+}
+/* I can make this more/less apart */
+.topInfoContainer{
+    display: flex;
+    gap: 8.5rem;
+}
+
+.topInfoContainer > div{
+    width: fit-content;
+    margin-top: 3rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* FIRST CHILD */
+
+.oneNameAndMission{
+    display:flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    height: fit-content;
+    /* border: 2px purple solid; */
+    max-width: 163px;
+    line-height: 1.5rem; 
+}
+
+.tagLine{
+    font-size: 1rem;
+    
+}
+
+.oneNameAndMission > p{
+    font-size: 1rem;
+}
+
+
+
+/* 2nd CHILD: EXPLORE */
+.twoExplore{
+    /* border: 2px blue solid; */
+    width: 400px;
+    height: fit-content;
+    line-height: 1.5rem;   
+}
+.twoExplore > ul{
+    font-size: 1.5rem;
+}
+
+.explore{
+    margin-bottom: .3rem;
+}
+
+
+/* 3rd CHILD: VISIT */
+
+.threeVisit{
+    display:flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    /* border: 2px black solid; */
+    height: fit-content;
+    line-height: 1.5rem;
+    
+}
+
+.tavernAddress{
+    /* border: 2px yellow solid; */
+}
+.visit{
+    font-size: 1rem;
+    font-style: normal;
+    margin-bottom: .3rem;
+}
+
+.actualAddress{
+    font-size: 1rem;
+    font-style: normal; 
+}
+
+.contactUs{
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+
+.contactContainer{
+    line-height: 1.5rem;
+}
+
+.email, .num{
+    font-size: 1rem;
+}
+
+
+
+
+
+/* 4th CHILD: FOLLOW */
+.fourFollow{
+    /* border: 2px hotpink solid; */
+    height: fit-content;
+    line-height: 1.5rem;
+}
+
+.follow{
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+
+.fourFollow li a {
+    font-size: 2.25rem;
+}
+
+/* 5th CHILD: LEGAL */
+.fiveLegal{
+    /* border: 2px orange solid; */
+    height: fit-content;
+    line-height: 1.5rem;
+}
+
+.legal{
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+
+
+.terms, .privacy{
+    font-size: 1rem    
+}
+
+.botCopyrightContainer > p{
+    /* border: green 2px solid; */
+    font-size: 1rem;
+}
