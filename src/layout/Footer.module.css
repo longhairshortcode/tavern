@@ -1,18 +1,20 @@
 .componentContainer{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5rem; 
-    max-width: var(--max-width);
+    max-width: 100%;
     padding: var(--padding);
-    height: 30rem;
+    height: fit-content;
     margin: 3rem auto 0 auto;
-    background-color: rgb(242, 231, 231);
+    /* background-color:  rgb(246, 187, 116); */
     /* border: 2px red solid; */
 }
 /* I can make this more/less apart */
 .topInfoContainer{
     display: flex;
     gap: 8.5rem;
+    /* border: 2px yellow solid; */
 }
 
 .topInfoContainer > div{
@@ -32,17 +34,17 @@
     gap: 1.6rem;
     height: fit-content;
     /* border: 2px purple solid; */
-    max-width: 163px;
-    line-height: 1.5rem; 
+    max-width: 200px;
+    line-height: 2rem; 
 }
 
 .tagLine{
-    font-size: 1rem;
+    font-size: 1.4rem;
     
 }
 
 .oneNameAndMission > p{
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 
@@ -50,11 +52,11 @@
 /* 2nd CHILD: EXPLORE */
 .twoExplore{
     /* border: 2px blue solid; */
-    width: 400px;
+    max-width: 200px;
     height: fit-content;
-    line-height: 1.5rem;   
+    line-height: 2rem;   
 }
-.twoExplore > ul{
+.twoExplore li{
     font-size: 1.5rem;
 }
 
@@ -70,36 +72,33 @@
     flex-direction: column;
     gap: 1.2rem;
     /* border: 2px black solid; */
+    max-width: 200px;
     height: fit-content;
-    line-height: 1.5rem;
-    
+    line-height: 2rem;  
 }
 
-.tavernAddress{
-    /* border: 2px yellow solid; */
-}
 .visit{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-style: normal;
     margin-bottom: .3rem;
 }
 
 .actualAddress{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-style: normal; 
 }
 
 .contactUs{
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: .3rem;
 }
 
 .contactContainer{
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .email, .num{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 
@@ -109,37 +108,60 @@
 /* 4th CHILD: FOLLOW */
 .fourFollow{
     /* border: 2px hotpink solid; */
+    max-width: 200px;
     height: fit-content;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .follow{
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: .3rem;
 }
 
 .fourFollow li a {
-    font-size: 2.25rem;
+    font-size: 3.25rem;
 }
 
 /* 5th CHILD: LEGAL */
 .fiveLegal{
     /* border: 2px orange solid; */
+    max-width: 200px;
     height: fit-content;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 .legal{
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: .3rem;
 }
 
 
 .terms, .privacy{
-    font-size: 1rem    
+    font-size: 1.5rem    
 }
 
 .botCopyrightContainer > p{
     /* border: green 2px solid; */
-    font-size: 1rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 480px){
+    .topInfoContainer > div{
+        width: 50%;
+    }
+
+    .topInfoContainer{
+        flex-wrap: wrap;
+        
+    }
+
+    .topInfoContainer{
+          gap: 0;
+    }
+
+    .oneNameAndMission, .threeVisit  {
+        max-width: 168px;
+        margin-right: 4rem;
+    
+    }
 }
