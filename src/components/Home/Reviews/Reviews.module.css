@@ -45,5 +45,7 @@
 }
 
 
-
+.leftArrowIcon:hover, .rightArrowIcon:hover{
+    background-color: orange;
+}
 

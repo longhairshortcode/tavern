@@ -7,6 +7,7 @@ import About from "./pages/About"
 import Catering from "./pages/Catering"
 import Locations from "./pages/Locations"
 import Contact from "./pages/Contact"
+import Order from "./pages/Order"
 
 register();
 
@@ -23,6 +24,7 @@ function App() {
         <Route path={"/catering"} element={<Catering/>}/>
         <Route path={"/locations"} element={<Locations/>}/>
         <Route path={"/contact"} element={<Contact/>}/>
+        <Route path={"/order"} element={<Order/>}/>
       </Routes>
       <Footer/>
     </>

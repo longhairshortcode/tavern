@@ -11,6 +11,11 @@
 
 }
 
+.centerLinks a:hover{
+    color: green;
+} 
+ 
+
 .navbarContainer{
     display: flex;
     justify-content: space-between;
@@ -35,11 +40,14 @@
     font-size: 1.3rem;
 }
 
-.rightButtonComponent > button{
-  background-color: black;
+.navButtonComponentContainer > button{
+  background-color: red;
   font-size: 1rem;
   padding: 1rem 2rem;
-  cursor: pointer; 
+}
+
+.navButtonComponent > button:hover{
+    color: green;
 }
 
 /* .logo{

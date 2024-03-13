@@ -5,6 +5,7 @@ import bread from "../../../assets/bread.png"
 import cheese from "../../../assets/cheese.png"
 import mouse from "../../../assets/mouse.png"
 import customerPic from "../../../assets/customerPic.png"
+import {Link} from 'react-router-dom' 
 
 function Hero() {
   return (
@@ -23,8 +24,8 @@ function Hero() {
                     <p className={style.bestPlaceHash}>#best place</p>
                     {/* do i put br or css (shorten width) to make the para cut at the correct spots? 2) should elemements width be 100% or fit the content? */}
                     <p className={style.bestPlacePara}>We specialize in chef-inspired fast casual cuisine from all over the Mediterranean. Our unique menu features Greek classics.</p>
-                    <div className={style.orangeButtonComponent}>
-                        <StartOrder/>
+                    <div className={style.heroButtonComponentContainer}>
+                    <Link className={style.orange} to={"/order"}><StartOrder hoverBgColor={"rgb(240, 177, 59)"} bgColor={"orange"}/></Link>
                     </div>   
                 </div>    
 

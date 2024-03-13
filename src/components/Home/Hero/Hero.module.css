@@ -86,13 +86,6 @@
     /* border: 4px green solid; */
 }
 
-.orangeButtonComponent > button{
-    background-color: orange;
-    width: 140px;
-    padding: 1.25rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
 
 
 .customerContainer{

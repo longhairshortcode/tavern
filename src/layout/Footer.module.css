@@ -126,6 +126,10 @@
     font-size: 3.25rem;
 }
 
+.fourFollow li a:hover{
+    color: green;
+}
+
 /* 5th CHILD: LEGAL */
 .fiveLegal{
     /* border: 2px orange solid; */

@@ -52,6 +52,10 @@ font-size: 1rem;
 cursor: pointer;
 }
 
+.resButton:hover{
+    background-color: rgb(240, 177, 59);
+}
+
 .rightImgContainer{
     /* border: 2px green solid; */
     width: 50%;

@@ -188,6 +188,10 @@
     
 }
 
+.dishAddButton:hover{
+    background-color:orange;
+}
+
 
 
 @media screen and (max-width: 760px){
