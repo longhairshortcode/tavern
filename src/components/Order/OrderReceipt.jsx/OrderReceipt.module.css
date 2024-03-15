@@ -1,0 +1,101 @@
+.componentContainer{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.receiptContainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    /* height: fit-content; */
+    min-height: 400px;
+    width: 300px;
+    background-color: ghostwhite;
+    color: orange;
+    /* border: 1px solid rgb(107, 100, 100); */
+    /* border: 2px solid blue; */
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.closeIconContainer{
+    /* border: 2px red solid; */
+    /* height: 400rem; */
+    /* height: fit-content; */
+    min-height: 400px;
+}
+
+.closeIcon{
+    color: grey;
+    font-size: 2.25rem;
+    /* border: 1px solid black; */
+    /* background-color: ghostwhite;     */
+}
+
+.topSectionContainer{
+}
+
+.tavernOrderBold{
+    font-weight: bold;
+}
+
+.middleItemsPricesContainer{
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content: space-between;
+
+}
+
+.itemsContainer li, .pricesContainer li{
+    font-size: 1.2rem;
+}
+
+.itemsContainer{
+    /* border: 2px red solid; */
+}
+
+.pricesContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.pricesTitle, .itemsTitle{
+    margin-bottom: .5rem;
+    border-bottom: 1px solid orange;
+}
+
+.itemsTitle, .pricesTitle, .subtotalTitle, .taxTitle, .totalTitle {
+    font-weight: bold;
+}
+
+.successful {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem; 
+}
+
+.bottomSectionContainer{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.subtotalContainer, .taxContainer, .totalContainer{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px red solid; */
+}
+
+
+
+
+
+

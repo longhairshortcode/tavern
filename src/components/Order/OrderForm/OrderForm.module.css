@@ -1,0 +1,155 @@
+.componentContainer{
+    /* border: black 3px solid; */
+    max-width: var(--max-width);
+    padding: 3rem 6rem;
+    margin: 0 auto;
+}
+
+.titleDirectionsFormContainer{
+    /* border: blue 3px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    margin-bottom: 1.5rem;
+}
+
+.directions{
+    /* border: 3px solid pink; */
+    font-size: 1.2rem;
+    width: 100%;
+    line-height: 1.75rem;
+}
+
+.formContainer{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.foodAndDrinkDropContainer{
+    display: flex;
+    /* align-items: center; */
+    /* border: green 3px solid; */
+    justify-content: space-between;
+}
+
+.foodDropContainer, .drinkDropContainer{
+    position: relative;
+    /* border: 2px red solid; */
+}
+
+.choices{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    padding: 1rem;
+    width: 100%;
+    background-color: orange;
+    color: white;
+    border: .1rem rgba(178, 103, 11, 0.796) solid;
+}
+
+.choices > p{
+    font-size: 1rem;
+}
+
+
+
+
+.foodButtonContainer, .drinkButtonContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .25rem 0 .8rem;
+    /* border: 2px blue solid; */
+    border-radius: 1rem;
+    width: 350px;
+    color: white;
+    background-color: orange;
+    border: .1rem rgba(178, 103, 11, 0.796) solid;
+    margin-bottom: 0;
+}
+
+.noBottomBorder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .25rem 0 .8rem;
+    /* border: 2px blue solid; */
+    border-radius: 1rem 1rem 0rem 0rem;
+    width: 350px;
+    color: white;
+    background-color: orange;
+    /* margin-bottom: .5rem; */
+}
+
+.drink, .food{
+    font-size: 1.2rem;
+}
+
+.dropIcon{
+    font-size: 3rem;
+}
+
+.selectionListContainer{
+    min-height: 70px;
+}
+
+.quantityNamePrice{
+    display: flex;
+    justify-content: end;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.selectionListContainer{
+    margin-top: 2rem;
+}
+
+.dishName{
+    margin-right: 2rem;
+}
+
+.dishQuantity{
+    margin-right: .75rem;
+}
+
+.totalAndPriceContainer{
+    display: flex;
+    justify-content: flex-end;
+    /* padding: 0 40px; */
+    /* border: orange 3px solid; */
+}
+
+.totalTitle, .totalPrice {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* border: 2px blue solid */
+}
+
+.totalTitle{
+    margin-right: 5rem;
+}
+.submitOrderContainer{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submitButton{
+    /* border: 2px brown solid; */
+    background-color: darkorange;
+    color: white;
+    padding: .75rem;
+    border-radius: 1rem;
+    margin-top: 2.5rem;
+    /* margin-right: 3.5rem; */
+    font-size: 1.2rem;
+
+}
+
