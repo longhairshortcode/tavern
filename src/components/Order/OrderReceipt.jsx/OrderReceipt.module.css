@@ -14,21 +14,21 @@
     flex-direction: column;
     border: 1px solid black;
     /* height: fit-content; */
-    min-height: 400px;
+    min-height: 300px;
     width: 300px;
     background-color: ghostwhite;
     color: orange;
     /* border: 1px solid rgb(107, 100, 100); */
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     padding: 2rem;
     gap: 2rem;
 }
 
 .closeIconContainer{
-    /* border: 2px red solid; */
+    border: 2px red solid;
     /* height: 400rem; */
     /* height: fit-content; */
-    min-height: 400px;
+    min-height: 300px;
 }
 
 .closeIcon{

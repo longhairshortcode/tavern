@@ -7,18 +7,32 @@ import OrderReceipt from "../OrderReceipt.jsx/OrderReceipt";
 
 function OrderForm() {
 
+// const [showReceipt, setShowReceipt] = useState(false);
+const [showReceipt, setShowReceipt] = useState(false)
 const [showFood, setShowFood] = useState(false)
 const [showDrink, setShowDrink] = useState(false)
 
 const handleFoodClick = () => {
     setShowFood(!showFood);
     setShowDrink(false);
-}
+};
 
 const handleDrinkClick = () => {
     setShowDrink(!showDrink);
     setShowFood(false);
-}
+};
+
+const handleSubmitOrder = () => {
+    setShowReceipt(true);
+};
+
+const handleReceiptClose = () => {
+    setShowReceipt(false); // Close the receipt when close button is clicked
+  };
+
+// const handleReceiptClose = () => {
+//     setShowReceipt(false);
+//   };
 
     return (
     <div className={style.componentContainer}>
@@ -73,9 +87,15 @@ const handleDrinkClick = () => {
                     <span className={style.totalPrice}>$0.00</span>
                 </div>
                 <div className={style.submitOrderContainer}>
-                    <button className={style.submitButton}>Submit Order</button>
+                    <button onClick={handleSubmitOrder} className={style.submitButton}>
+                        Submit Order
+                    </button>
                 </div>
-                <OrderReceipt/>    
+                <OrderReceipt
+            showReceipt={showReceipt}
+            handleReceiptClose={handleReceiptClose}
+          />
+                {/* {showReceipt && <OrderReceipt handleReceiptClose={setShowReceipt} />}   */}
             </div>
         </div>
     </div>
