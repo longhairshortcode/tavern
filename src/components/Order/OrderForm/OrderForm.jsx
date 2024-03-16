@@ -30,9 +30,6 @@ const handleReceiptClose = () => {
     setShowReceipt(false); // Close the receipt when close button is clicked
   };
 
-// const handleReceiptClose = () => {
-//     setShowReceipt(false);
-//   };
 
     return (
     <div className={style.componentContainer}>
