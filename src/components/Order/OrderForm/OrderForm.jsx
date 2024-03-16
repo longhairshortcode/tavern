@@ -74,17 +74,12 @@ const handleReceiptClose = () => {
                     <p className={style.quantityNamePrice}>
                         <span className={style.dishQuantity}>2 - </span>
                         <span className={style.dishName}>Pizza</span>
-                        <span className={style.dishPrice}>$6.00</span>
-                    </p>
-                    <p className={style.quantityNamePrice}>
-                        <span className={style.dishQuantity}>2 - </span>
-                        <span className={style.dishName}>Pizza</span>
-                        <span className={style.dishPrice}>$6.00</span>
+                        <span className={style.dishPrice}>$10.00</span>
                     </p>
                 </div>
                 <div className={style.totalAndPriceContainer}>
-                    <span className={style.totalTitle}>Total:</span>
-                    <span className={style.totalPrice}>$0.00</span>
+                    <span className={style.totalTitle}>Total(tax added):</span>
+                    <span className={style.totalPrice}>$22.00</span>
                 </div>
                 <div className={style.submitOrderContainer}>
                     <button onClick={handleSubmitOrder} className={style.submitButton}>
