@@ -154,3 +154,10 @@
 
 }
 
+@media screen and (max-width:480px){
+
+    .foodButtonContainer, .drinkButtonContainer, .choices, .noBottomBorder{
+        max-width: 170px;
+    
+    }
+}
