@@ -123,7 +123,6 @@
 .totalAndPriceContainer{
     display: flex;
     justify-content: flex-end;
-    /* padding: 0 40px; */
     /* border: orange 3px solid; */
 }
 
