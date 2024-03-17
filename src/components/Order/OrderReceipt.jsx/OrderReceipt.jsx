@@ -3,7 +3,7 @@ import { IoIosClose } from "react-icons/io";
 import { useState } from "react";
 
 function OrderReceipt({ showReceipt, handleReceiptClose }) {
-  // No need for state for the receipt component itself
+  // No need for state for the receipt component itself if doing click from form troggers thos
 
   const handleCloseClick = () => {
     handleReceiptClose(); // Call the handler function from props to close the receipt
