@@ -1,6 +1,5 @@
 import style from "./OrderReceipt.module.css";
 import { IoIosClose } from "react-icons/io";
-import { useState } from "react";
 
 function OrderReceipt({ showReceipt, handleReceiptClose }) {
   // No need for state for the receipt component itself if doing click from form troggers thos
