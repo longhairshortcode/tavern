@@ -3,7 +3,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { useState } from "react";
 import OrderReceipt from "../OrderReceipt.jsx/OrderReceipt";
 import OrderData from "../OrderHero/OrderData.js"
-
+import { useEffect } from "react";
 
 function OrderForm() {
 
@@ -12,6 +12,7 @@ const [showReceipt, setShowReceipt] = useState(false)
 const [showFood, setShowFood] = useState(false)
 const [showDrink, setShowDrink] = useState(false)
 const [showSelection, setShowSelection] = useState([])
+const [subtotal, setSubtotal] = useState(0)
 
 const handleSelection = (item) => {
     setShowSelection([...showSelection, item ])
@@ -35,6 +36,15 @@ const handleReceiptClose = () => {
     setShowReceipt(false); // Close the receipt when close button is clicked
   };
 
+  //Q - it happens twice right, once when showSelction becomes soething, then again but same answer 
+  //when code runs?
+  useEffect(() => {
+    setSubtotal(showSelection.reduce((total, item) => total + item.price, 0));
+}, [showSelection]);
+
+useEffect(() => {
+    
+}, [showSelection]);
 
     return (
     <div className={style.componentContainer}>
@@ -84,24 +94,24 @@ const handleReceiptClose = () => {
                        ) )} 
                 </div>
                 <div className={style.totalAndPriceContainer}>
-                    {showSelection.map((item) => (
+                    {/* {showSelection.map((item) => ( */}
                     <div className={style.subTotalContainer}>
                         <p className={style.subTotal}>Subtotal:</p>
-                        <p className={style.subTotalPrice}>${item.price}.00</p>
+                        <p className={style.subTotalPrice}>${subtotal}.00</p>
                     </div>
-                    ))}
-                    {showSelection.map((item) => (
+                    {/* ))} */}
+                    {/* {showSelection.map((item) => ( */}
                     <div className={style.taxContainer}>
                         <p className={style.tax}>Tax:</p>
-                        <p className={style.taxPrice}>${item.price * .1}</p>
+                        <p className={style.taxPrice}>${ subtotal * .1}.</p>
                     </div>
-                    ))}
-                    {showSelection.map((item) => (
+                    {/* ))} */}
+                    {/* {showSelection.map((item) => ( */}
                     <div className={style.priceContainer}>
                         <p className={style.totalTitle}>Total:</p>
-                        <p className={style.totalPrice}>${item.price + item.price * .1}</p>
+                        <p className={style.totalPrice}>${subtotal + (subtotal * .1)}</p>
                     </div>
-                    ))}
+                    {/* ))} */}
                 </div>
                 <div className={style.submitOrderContainer}>
                     <button onClick={handleSubmitOrder} className={style.submitButton}>
