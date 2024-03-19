@@ -17,72 +17,85 @@ const OrderData = [
         id: 1,
         image: noodles,  
         name: "noodles",
-        price: 6  
+        quantity: 0,
+        price: 6
+   
     },
     {
         id: 2,
         image: pasta,  
         name: "pasta",
+        quantity: 0,
         price: 7    
     },
     {
         id: 3,
         image: pizza,  
         name: "pizza",
+        quantity: 0,
         price: 10  
     },
     {
         id: 4,
         image: salad,  
         name: "salad",
+        quantity: 0,
         price: 6  
     },
     {
         id: 5,
         image: steak,  
-        name: "steak",  
+        name: "steak",
+        quantity: 0,  
         price: 12
     },
     {
         id: 6,
         image: tacos,  
         name: "tacos",
+        quantity: 0,
         price: 9  
     },
     {
         id: 7,
         image: greenJuice,  
         name: "Green Juice",
+        quantity: 0,
         price: 4  
     },
     {
         id: 8,
         image: lemonTea,  
         name: "Lemon Tea",
+        quantity: 0,
         price: 2  
     },
     {
         id: 9,
         image: margarita,  
         name: "margarita",
+        quantity: 0,
         price: 6  
     },
     {
         id: 10,
         image: mojito,  
         name: "mojito",
+        quantity: 0,
         price: 6  
     },
     {
         id: 11,
         image: strawberryShake,  
         name: "Strawberry Shake",
+        quantity: 0,
         price: 4  
     },
     {
         id: 12,
         image: tropicalSmoothie,  
-        name: "Tropical Smoothie",  
+        name: "Tropical Smoothie",
+        quantity: 0,  
         price: 4
     },
 ]

@@ -6,13 +6,28 @@ import OrderData from "../OrderHero/OrderData.js"
 import { useEffect } from "react";
 
 function OrderForm() {
-
-// const [showReceipt, setShowReceipt] = useState(false);
+const [orderData, setOrderData] = useState(OrderData)
 const [showReceipt, setShowReceipt] = useState(false)
 const [showFood, setShowFood] = useState(false)
 const [showDrink, setShowDrink] = useState(false)
 const [showSelection, setShowSelection] = useState([])
 const [subtotal, setSubtotal] = useState(0)
+const [tax, setTax] = useState(0)
+const [total, setTotal] = useState(0)
+const [quantity, setQuantity] = useState(0)
+
+
+const increaseQuantity = (item) => {
+    setOrderData(prevData => {
+        const theData = prevData.map((data) => {
+            if (data.id == item.id){
+                return{...data, quantity: data.quantity + 1}
+            } 
+            return data;
+        })
+        return theData;
+    })
+}
 
 const handleSelection = (item) => {
     setShowSelection([...showSelection, item ])
@@ -36,15 +51,35 @@ const handleReceiptClose = () => {
     setShowReceipt(false); // Close the receipt when close button is clicked
   };
 
-  //Q - it happens twice right, once when showSelction becomes soething, then again but same answer 
-  //when code runs?
+
+
+  useEffect(() =>{
+
+  }, [quantity]);
+
+ //USING REDUCE
   useEffect(() => {
-    setSubtotal(showSelection.reduce((total, item) => total + item.price, 0));
+    const newSubtotal = showSelection.reduce((total, item) => total + item.price, 0)
+    setSubtotal(newSubtotal);
+    const newTax = newSubtotal* 0.1; 
+    setTax(newTax); 
+    const newTotal = newSubtotal + newTax;
+    setTotal(newTotal)
 }, [showSelection]);
 
-useEffect(() => {
-    
-}, [showSelection]);
+//Using for loop
+// useEffect(() => {
+//     let newSubtotal = 0
+//     for (let i = 0; i < showSelection.length; i++){
+//         newSubtotal = showSelection[i].price
+//     }
+//     setSubtotal(newSubtotal);
+//     const newTax = newSubtotal* 0.1; 
+//     setTax(newTax); 
+//     const newTotal = newSubtotal + newTax;
+//     setTotal(newTotal)
+// }, [showSelection]);
+
 
     return (
     <div className={style.componentContainer}>
@@ -62,7 +97,7 @@ useEffect(() => {
                         </button>
                         { showFood &&  
                         <div className={style.choices}>
-                        {OrderData.filter((item) => item.id <= 6).map((item) =>(
+                        {orderData.filter((item) => item.id <= 6).map((item) =>(
                             <p onClick={() => handleSelection(item)} key={item.id}>{item.name}</p>
                         ))}   
                         </div>
@@ -75,8 +110,14 @@ useEffect(() => {
                         </button>
                         { showDrink && 
                         <div className={style.choices}> 
-                        {OrderData.filter((item) => item.id>= 7).map((item) =>(
-                           <p onClick={() => handleSelection(item)} key={item.id}>{item.name}</p>     
+                        {orderData.filter((item) => item.id>= 7).map((item) =>(
+                           <p 
+                              onClick={() =>{ 
+                                increaseQuantity(item);
+                                handleSelection(item); 
+                                
+                              }} 
+                           key={item.id}>{item.name}</p>     
                         ))}
                         </div>
                         }
@@ -86,7 +127,7 @@ useEffect(() => {
                         {showSelection.map((item) => (
                             <>
                                 <p className={style.quantityNamePrice}>
-                                    <span className={style.dishQuantity}>1 x </span>
+                                    <span className={style.dishQuantity}>{item.quantity} x </span>
                                     <span className={style.dishName}>{item.name}</span>
                                     <span className={style.dishPrice}>${item.price}.00</span> 
                                 </p>
@@ -97,19 +138,19 @@ useEffect(() => {
                     {/* {showSelection.map((item) => ( */}
                     <div className={style.subTotalContainer}>
                         <p className={style.subTotal}>Subtotal:</p>
-                        <p className={style.subTotalPrice}>${subtotal}.00</p>
+                        <p className={style.subTotalPrice}>${subtotal.toFixed(2)}</p>
                     </div>
                     {/* ))} */}
                     {/* {showSelection.map((item) => ( */}
                     <div className={style.taxContainer}>
                         <p className={style.tax}>Tax:</p>
-                        <p className={style.taxPrice}>${ subtotal * .1}.</p>
+                        <p className={style.taxPrice}>${tax.toFixed(2)}</p>
                     </div>
                     {/* ))} */}
                     {/* {showSelection.map((item) => ( */}
                     <div className={style.priceContainer}>
                         <p className={style.totalTitle}>Total:</p>
-                        <p className={style.totalPrice}>${subtotal + (subtotal * .1)}</p>
+                        <p className={style.totalPrice}>${total.toFixed(2)}</p>
                     </div>
                     {/* ))} */}
                 </div>
