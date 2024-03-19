@@ -29,9 +29,40 @@ const increaseQuantity = (item) => {
     })
 }
 
+
+// const handleSelection = (item) => {
+//     setShowSelection([...showSelection, item ])
+// }
+
+//changing this handleSelection from original above to below allows to change the quantity to 1 once but nothing can be added after
+// const handleSelection = (item) => {
+//     const existingItem = showSelection.find((selectedItem) => selectedItem.id === item.id);
+//     if (existingItem) {
+//         // If the item already exists, update its quantity to 1
+//         const updatedSelection = showSelection.map((selectedItem) =>
+//             selectedItem.id === item.id ? { ...selectedItem, quantity: 1 } : selectedItem
+//         );
+//         setShowSelection(updatedSelection);
+//     } else {
+//         // If the item doesn't exist, add it to showSelection with a quantity of 1
+//         setShowSelection([...showSelection, { ...item, quantity: 1 }]);
+//     }
+// };
+
 const handleSelection = (item) => {
-    setShowSelection([...showSelection, item ])
-}
+    const existingItem = showSelection.find((selectedItem) => selectedItem.id === item.id);
+    if (existingItem) {
+        // If the item already exists, increase its quantity by 1
+        const updatedSelection = showSelection.map((selectedItem) =>
+            selectedItem.id === item.id ? { ...selectedItem, quantity: selectedItem.quantity + 1 } : selectedItem
+        );
+        setShowSelection(updatedSelection);
+    } else {
+        // If the item doesn't exist, add it to showSelection with a quantity of 1
+        setShowSelection([...showSelection, { ...item, quantity: 1 }]);
+    }
+};
+
 
 const handleFoodClick = () => {
     setShowFood(!showFood);
@@ -53,18 +84,27 @@ const handleReceiptClose = () => {
 
 
 
-  useEffect(() =>{
+//   useEffect(() =>{
 
-  }, [quantity]);
+//   }, [quantity]);
 
- //USING REDUCE
-  useEffect(() => {
-    const newSubtotal = showSelection.reduce((total, item) => total + item.price, 0)
+ //USING REDUCE OLD VERSION, and updated below:
+//   useEffect(() => {
+//     const newSubtotal = showSelection.reduce((total, item) => total + item.price, 0)
+//     setSubtotal(newSubtotal);
+//     const newTax = newSubtotal* 0.1; 
+//     setTax(newTax); 
+//     const newTotal = newSubtotal + newTax;
+//     setTotal(newTotal)
+// }, [showSelection]);
+
+useEffect(() => {
+    const newSubtotal = showSelection.reduce((total, item) => total + (item.price * item.quantity), 0);
     setSubtotal(newSubtotal);
-    const newTax = newSubtotal* 0.1; 
-    setTax(newTax); 
+    const newTax = newSubtotal * 0.1; // Assuming tax rate is 10%
+    setTax(newTax);
     const newTotal = newSubtotal + newTax;
-    setTotal(newTotal)
+    setTotal(newTotal);
 }, [showSelection]);
 
 //Using for loop
@@ -129,7 +169,7 @@ const handleReceiptClose = () => {
                                 <p className={style.quantityNamePrice}>
                                     <span className={style.dishQuantity}>{item.quantity} x </span>
                                     <span className={style.dishName}>{item.name}</span>
-                                    <span className={style.dishPrice}>${item.price}.00</span> 
+                                    <span className={style.dishPrice}>${item.price * item.quantity}.00</span> 
                                 </p>
                             </>
                        ) )} 
