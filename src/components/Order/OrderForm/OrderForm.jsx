@@ -69,6 +69,10 @@ const handleReceiptClose = () => {
     setSubtotal(0);
     setTax(0);
     setTotal(0);
+    setShowSelection([])
+    // setShowSelection(showSelection.map((item) => { item.quantity = 0, item.name = "", 
+    // item.quantity = "0"})
+    // )
   };
 
 
