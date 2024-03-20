@@ -53,9 +53,29 @@
 
 .middleItemsPricesContainer{
     display: flex;
+    flex-direction: column;
     /* border: 2px solid green; */
     justify-content: space-between;
 
+}
+
+.middleItemsPricesContainer > p {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px red solid; */
+    width: 100%;
+}
+
+.middleItemsPricesContainer > p > span {
+    /* border: 2px blue solid; */
+}
+.middleItemsPricesContainer > p > span:nth-child(1) {
+    /* border: 2px hotpink solid; */
+    width: 10%;
+}
+.middleItemsPricesContainer > p > span:nth-child(2) {
+    /* border: 4px yellow solid; */
+    width: 75%;
 }
 
 .itemsContainer li, .pricesContainer li{
@@ -101,6 +121,15 @@
     /* border: 2px red solid; */
 }
 
+
+.quantityNamePrice{
+    display: flex;
+    /* justify-content: end; */
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100%;
+    border: 2px blue solid;
+}
 
 
 

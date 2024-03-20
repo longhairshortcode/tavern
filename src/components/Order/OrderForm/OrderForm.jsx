@@ -14,20 +14,20 @@ const [showSelection, setShowSelection] = useState([])
 const [subtotal, setSubtotal] = useState(0)
 const [tax, setTax] = useState(0)
 const [total, setTotal] = useState(0)
-const [quantity, setQuantity] = useState(0)
+// const [quantity, setQuantity] = useState(0)
 
-
-const increaseQuantity = (item) => {
-    setOrderData(prevData => {
-        const theData = prevData.map((data) => {
-            if (data.id == item.id){
-                return{...data, quantity: data.quantity + 1}
-            } 
-            return data;
-        })
-        return theData;
-    })
-}
+//Prob don't need this above or below anymore since everything is in handleSelection function
+// const increaseQuantity = (item) => {
+//     setOrderData(prevData => {
+//         const theData = prevData.map((data) => {
+//             if (data.id == item.id){
+//                 return{...data, quantity: data.quantity + 1}
+//             } 
+//             return data;
+//         })
+//         return theData;
+//     })
+// }
 
 
 // const handleSelection = (item) => {
@@ -35,20 +35,6 @@ const increaseQuantity = (item) => {
 // }
 
 //changing this handleSelection from original above to below allows to change the quantity to 1 once but nothing can be added after
-// const handleSelection = (item) => {
-//     const existingItem = showSelection.find((selectedItem) => selectedItem.id === item.id);
-//     if (existingItem) {
-//         // If the item already exists, update its quantity to 1
-//         const updatedSelection = showSelection.map((selectedItem) =>
-//             selectedItem.id === item.id ? { ...selectedItem, quantity: 1 } : selectedItem
-//         );
-//         setShowSelection(updatedSelection);
-//     } else {
-//         // If the item doesn't exist, add it to showSelection with a quantity of 1
-//         setShowSelection([...showSelection, { ...item, quantity: 1 }]);
-//     }
-// };
-
 const handleSelection = (item) => {
     const existingItem = showSelection.find((selectedItem) => selectedItem.id === item.id);
     if (existingItem) {
@@ -80,6 +66,9 @@ const handleSubmitOrder = () => {
 
 const handleReceiptClose = () => {
     setShowReceipt(false); // Close the receipt when close button is clicked
+    setSubtotal(0);
+    setTax(0);
+    setTotal(0);
   };
 
 
@@ -120,7 +109,15 @@ useEffect(() => {
 //     setTotal(newTotal)
 // }, [showSelection]);
 
-
+const selectedItems = showSelection.map((item) => (
+    <>
+        <p className={style.quantityNamePrice}>
+            <span className={style.selectionQuantity}>{item.quantity} x </span>
+            <span className={style.selectionName}>{item.name}</span>
+            <span className={style.selectionPrice}>${item.price * item.quantity}.00</span> 
+        </p>
+    </>
+) )
     return (
     <div className={style.componentContainer}>
         <div className={style.titleDirectionsFormContainer}>
@@ -138,7 +135,7 @@ useEffect(() => {
                         { showFood &&  
                         <div className={style.choices}>
                         {orderData.filter((item) => item.id <= 6).map((item) =>(
-                            <p onClick={() => handleSelection(item)} key={item.id}>{item.name}</p>
+                            <p className={style.food} onClick={() => handleSelection(item)} key={item.id}>{item.name}</p>
                         ))}   
                         </div>
                         }                       
@@ -151,11 +148,8 @@ useEffect(() => {
                         { showDrink && 
                         <div className={style.choices}> 
                         {orderData.filter((item) => item.id>= 7).map((item) =>(
-                           <p 
-                              onClick={() =>{ 
-                                increaseQuantity(item);
+                           <p className={style.drink} onClick={() =>{ 
                                 handleSelection(item); 
-                                
                               }} 
                            key={item.id}>{item.name}</p>     
                         ))}
@@ -164,15 +158,7 @@ useEffect(() => {
                     </div>
                 </div>
                 <div className={style.selectionListContainer}>
-                        {showSelection.map((item) => (
-                            <>
-                                <p className={style.quantityNamePrice}>
-                                    <span className={style.dishQuantity}>{item.quantity} x </span>
-                                    <span className={style.dishName}>{item.name}</span>
-                                    <span className={style.dishPrice}>${item.price * item.quantity}.00</span> 
-                                </p>
-                            </>
-                       ) )} 
+                        {selectedItems} 
                 </div>
                 <div className={style.totalAndPriceContainer}>
                     {/* {showSelection.map((item) => ( */}
@@ -200,8 +186,12 @@ useEffect(() => {
                     </button>
                 </div>
                 <OrderReceipt
-            showReceipt={showReceipt}
-            handleReceiptClose={handleReceiptClose}
+                    selectedItems = {selectedItems}
+                    subtotal = {subtotal.toFixed(2)}
+                    tax = {tax.toFixed(2)}
+                    total = {total.toFixed(2)}
+                    showReceipt={showReceipt}
+                    handleReceiptClose={handleReceiptClose}
                 />
                 {/* {showReceipt && <OrderReceipt handleReceiptClose={setShowReceipt} />}   */}
             </div>

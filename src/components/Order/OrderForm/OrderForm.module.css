@@ -93,6 +93,10 @@
     font-size: 1.2rem;
 }
 
+.drink:hover, .food:hover {
+    color: grey;
+}
+
 .dropIcon{
     font-size: 3rem;
 }
@@ -107,17 +111,18 @@
     font-size: 1.8rem;
     font-weight: bold;
     width: 100%;
+    /* border: red solid 2px; */
 }
 
 .selectionListContainer{
     margin-top: 2rem;
 }
 
-.dishName{
+.selectionName{
     margin-right: 2rem;
 }
 
-.dishQuantity{
+.selectionQuantity{
     margin-right: .75rem;
 }
 
