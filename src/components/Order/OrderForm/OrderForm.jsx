@@ -49,6 +49,14 @@ const handleSelection = (item) => {
     }
 };
 
+//does below work instead of above?
+// const handleSelection = (item) => {
+//     const updatedSelection = showSelection.map((selectedItem) =>
+//         selectedItem.id === item.id ? { ...selectedItem, quantity: selectedItem.quantity + 1 } : selectedItem
+//     );
+
+//     setShowSelection(existingItem ? updatedSelection : [...showSelection, { ...item, quantity: 1 }]);
+// };
 
 const handleFoodClick = () => {
     setShowFood(!showFood);
