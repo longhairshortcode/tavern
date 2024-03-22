@@ -35,28 +35,28 @@ const [total, setTotal] = useState(0)
 // }
 
 //changing this handleSelection from original above to below allows to change the quantity to 1 once but nothing can be added after
-const handleSelection = (item) => {
-    const existingItem = showSelection.find((selectedItem) => selectedItem.id === item.id);
-    if (existingItem) {
-        // If the item already exists, increase its quantity by 1
-        const updatedSelection = showSelection.map((selectedItem) =>
-            selectedItem.id === item.id ? { ...selectedItem, quantity: selectedItem.quantity + 1 } : selectedItem
-        );
-        setShowSelection(updatedSelection);
-    } else {
-        // If the item doesn't exist, add it to showSelection with a quantity of 1
-        setShowSelection([...showSelection, { ...item, quantity: 1 }]);
-    }
-};
-
-//does below work instead of above?
 // const handleSelection = (item) => {
-//     const updatedSelection = showSelection.map((selectedItem) =>
-//         selectedItem.id === item.id ? { ...selectedItem, quantity: selectedItem.quantity + 1 } : selectedItem
-//     );
-
-//     setShowSelection(existingItem ? updatedSelection : [...showSelection, { ...item, quantity: 1 }]);
+//     const existingItem = showSelection.find((selectedItem) => selectedItem.id === item.id);
+//     if (existingItem) {
+//         // If the item already exists, increase its quantity by 1
+//         const updatedSelection = showSelection.map((selectedItem) =>
+//             selectedItem.id === item.id ? { ...selectedItem, quantity: selectedItem.quantity + 1 } : selectedItem
+//         );
+//         setShowSelection(updatedSelection);
+//     } else {
+//         // If the item doesn't exist, add it to showSelection with a quantity of 1
+//         setShowSelection([...showSelection, { ...item, quantity: 1 }]);
+//     }
 // };
+
+//Q - below should work if swap for above but it is not, why??
+const handleSelection = (item) => {
+    const updatedSelection = showSelection.map((selectedItem) =>
+        selectedItem.id === item.id ? { ...selectedItem, quantity: selectedItem.quantity + 1 } : selectedItem
+    );
+
+    setShowSelection(existingItem ? updatedSelection : [...showSelection, { ...item, quantity: 1 }]);
+};
 
 const handleFoodClick = () => {
     setShowFood(!showFood);
