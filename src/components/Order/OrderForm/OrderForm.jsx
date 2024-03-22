@@ -49,7 +49,7 @@ const [total, setTotal] = useState(0)
 //     }
 // };
 
-//Q - below should work if swap for above but it is not, why??
+//Q - below should work if swap for above but it is not, why???
 const handleSelection = (item) => {
     const updatedSelection = showSelection.map((selectedItem) =>
         selectedItem.id === item.id ? { ...selectedItem, quantity: selectedItem.quantity + 1 } : selectedItem
