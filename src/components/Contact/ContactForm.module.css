@@ -17,8 +17,12 @@
     max-width: var(--max-width);
     width: 100%;
      /* gap: 8rem; */
-     background-color: rgba(255, 228, 196, .4);
-    border: 2px  rgba(219, 207, 193, 0.4) solid;
+     background-color: rgba(241, 237, 237);
+     box-shadow: 
+     rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, /* Shadow at the bottom */
+     rgba(0, 0, 0, 0.1) 0px -10px 15px -3px, /* Shadow at the top */
+     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; /* Additional shadow*/
+    /* border: 2px  orange solid; */
     border-radius: 10px;
     
 }
@@ -31,7 +35,7 @@
 
 .formTitle{
     font-size: 2.5rem;
-    color: orange;
+    color: black;
     font-weight: bold;
 }
 
