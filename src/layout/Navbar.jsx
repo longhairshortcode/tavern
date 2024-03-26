@@ -38,7 +38,7 @@ function Navbar() {
             <NavLink to="/about" onClick={closeLinkMenu}>About</NavLink>
             <NavLink to="/" onClick={closeLinkMenu}>Menu</NavLink>
             <NavLink to="/catering" onClick={closeLinkMenu}>Catering</NavLink>
-            <NavLink to="/location" onClick={closeLinkMenu}>Location</NavLink>
+            <NavLink to="/locations" onClick={closeLinkMenu}>Locations</NavLink>
             <NavLink to="/contact" onClick={closeLinkMenu}>Contact</NavLink>
         </div>
         <div className={style.navButtonComponentContainer}>
