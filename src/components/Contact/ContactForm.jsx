@@ -4,7 +4,7 @@ import axios from "axios"
 
 
 function ContactForm() {
-
+//below is creating the state for all the inputs (each input has unique name and name is the props here)
 const [userContactData, setUserContactData] = useState({
   firstName: "",
   lastName: "",
@@ -14,6 +14,7 @@ const [userContactData, setUserContactData] = useState({
   question: "",
 })
 
+//handleChange function is triggered onClick and deconstructs the name and value from e.target, then setter function with prev
 function handleChange(e){
   const {name, value} = e.target
   setUserContactData(prev => ({
@@ -22,17 +23,43 @@ function handleChange(e){
   }))
 }
 
+//can also do above like  this without destructuring:
+
+// function handleChange(e) {
+//   setUserContactData(prev => ({
+//     ...prev, 
+//     [e.target.name]: e.target.value
+//   }));
+}
+
+//0. const name of handler and make it an arrow function with async first and (e)
 const handleSubmit = async (e) => {
+  //1. prevent default
   e.preventDefault()
+  // 2. not mandatory but destructured to see it when sending it to api
   const {firstName, lastName, email, selectLocation, question} = userContactData
+ //3. try, then in {} console log a response which is awaited, which is an axios.post() to the apiurl in "" and what you are sending
   try { 
     const response = await axios.post("https://apiurl.com", {firstName, lastName, email, selectLocation, question} )
     console.log(response)
+  //4. catch the error, then {console.log it inside braces}
   }catch(error) {
     console.log(error)
-    console.log(error.message) //for user if put in UI
+    // console.log(error.message) //for user if put in UI
   }
 }
+
+//HW OF REDOING ABOVE, DELETE BOTTOM 
+// const handleSubmit = async (e) => {
+//   e.preventDefault()
+//   const {firstName, lastName, email, selectLocation, question} = userContactData
+//   try{
+//       const response = await axios.post("apiurl",  {firstName, lastName, email, selectLocation, question}  )
+//       console.log(response)
+//   }catch(error){
+//     console.log(error)
+//   }
+// }
   return (
     <div className={style.componentContainer}>
       <form className={style.formContainer} onSubmit={handleSubmit}>
@@ -106,6 +133,6 @@ const handleSubmit = async (e) => {
       </form>
     </div>
   )
-}
+
 
 export default ContactForm
