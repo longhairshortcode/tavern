@@ -97,7 +97,7 @@
         top: 7.5rem;
         right: 0;
         align-items: flex-end;
-        background-color: rgb(241, 237, 237);
+        background-color: rgba(246, 187, 116);
         padding-bottom: 4rem;
         /* border: 2px red solid; */
         width: 90%;
@@ -134,7 +134,7 @@
         width: 100%;
         /* height: calc(100vh - 70px); */
         color: black;
-        background-color:  rgb(241, 237, 237);
+        background-color: rgba(246, 187, 116);
         /* border: 5px solid green; */
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
