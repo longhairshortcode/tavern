@@ -30,7 +30,7 @@ function handleChange(e){
 //     ...prev, 
 //     [e.target.name]: e.target.value
 //   }));
-}
+// }
 
 //0. const name of handler and make it an arrow function with async first and (e)
 const handleSubmit = async (e) => {
@@ -132,7 +132,7 @@ const handleSubmit = async (e) => {
         </div>
       </form>
     </div>
-  )
-
+  );
+  }
 
 export default ContactForm
