@@ -1,22 +1,8 @@
-import style from "./Styles/MenuOfRestaurant.module.css"
-import {Link, Outlet} from "react-router-dom"
+import style from "./DrinkPaperMenu.module.css"
 
-function MenuOfRestaurant() {
+function DrinkPaperMenu() {
   return (
-    <div className={style.componentContainer}>
-      <div className={style.menuLeftAndRightContainer}>
-        <div className={style.menuLeftContainer}>
-          <p className={style.restaurantLeftTitle}>TAVERN RESTAURANT</p>
-          <img className={style.menuImage} alt="restaurant logo"/>
-        </div>
-        <div className={style.menuRightContainer}>
-          <h2 className={style.menuRightTitle}>Food And Beverage Menu</h2>
-          <div>
-            <Link className={style.foodButton} to= "food-menu">Food</Link>
-            <Link className={style.drinkButton} to="drink-menu">Drink</Link>
-          </div>
-            <Outlet/>
-             {/* <div className={style.bothFoodAndDrinkColumnContainer}> 
+            <div className={style.bothFoodAndDrinkColumnContainer}> 
               <div className={style.foodsLeftContainer}>
                 <div className={style.foodSingleContainer}>
                   <div className={style.foodNameAndPriceContainer}>
@@ -35,11 +21,8 @@ function MenuOfRestaurant() {
                   <p className={style.foodDescription}>This is the description of the drink item in great detail of all ingredients.</p>        
                 </div>
               </div>
-             </div> */}
-        </div>
-      </div>
-    </div>
+             </div> 
   )
 }
 
-export default MenuOfRestaurant
+export default DrinkPaperMenu

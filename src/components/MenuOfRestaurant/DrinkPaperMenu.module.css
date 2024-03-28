@@ -1,0 +1,28 @@
+/* put in drink */
+.drinksRightContainer{
+    width: 50%;
+    border: 5px solid purple;
+}
+
+.drinkNameAndPriceContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    
+}
+
+.drinkName{
+    font-weight: bold;
+}
+
+.drinkPrice{
+    color: green;
+    font-weight: bold; 
+}
+
+.drinkSingleContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 3px orange solid;
+}

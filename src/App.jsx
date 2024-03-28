@@ -9,6 +9,8 @@ import Locations from "./pages/Locations"
 import Contact from "./pages/Contact"
 import Order from "./pages/Order"
 import MenuOfRestaurant from "./pages/MenuOfRestaurant"
+import FoodPaperMenu from "./components/MenuOfRestaurant/FoodPaperMenu"
+import DrinkPaperMenu from "./components/MenuOfRestaurant/DrinkPaperMenu"
 
 
 register();
@@ -20,13 +22,16 @@ function App() {
     <>
       <Navbar/>
       <Routes>
-        <Route path={"/"} element={<Home/>}/>
-        <Route path={"/about"} element={<About/>}/>
-        <Route path={"/menu"} element={<MenuOfRestaurant/>}/>      
-        <Route path={"/catering"} element={<Catering/>}/>
-        <Route path={"/locations"} element={<Locations/>}/>
-        <Route path={"/contact"} element={<Contact/>}/>
-        <Route path={"/order"} element={<Order/>}/>
+        <Route path={"/"} element={<Home/>}/>  
+        <Route path={"about"} element={<About/>}/> 
+        <Route path={"menu"} element={<MenuOfRestaurant/>}> 
+          <Route path={"food-menu"} element={<FoodPaperMenu/>}/> 
+          <Route path={"drink-menu"} element={<DrinkPaperMenu/>}/>  
+        </Route>      
+        <Route path={"catering"} element={<Catering/>}/>
+        <Route path={"locations"} element={<Locations/>}/>
+        <Route path={"contact"} element={<Contact/>}/>
+        <Route path={"order"} element={<Order/>}/>
       </Routes>
       <Footer/>
     </>

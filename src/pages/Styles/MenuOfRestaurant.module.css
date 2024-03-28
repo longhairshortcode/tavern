@@ -1,18 +1,139 @@
 .componentContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: calc(100vh - 8rem);
     background-image: url("../../assets/chefHand.png");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: contain;
     background-position: center;
 
 }
 
-.menuTopAndBottomContainer{
+.menuLeftAndRightContainer{
     display: flex;
-    flex-direction: column;
+    /* margin: 0 auto; */
     width: 100%;
-    max-width: var(--max-width);
+    max-width: 1000px;
     /* background-color: green; */
     height: 600px;
-    border: 2px solid black;
+    border: 5px solid black;
+    background-color: white;
 }
+
+
+.menuLeftContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 6px solid hotpink;
+    width: 50%;
+    gap: 4rem;
+}
+
+.restaurantLeftTitle{
+    /* background-color: lightblue; */
+    margin-top: 7rem;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.menuImage{
+    /* background-color: lightsalmon; */
+}
+
+.menuRightContainer{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid yellow;
+    width: 50%;
+
+}
+.menuRightTitle{
+    border: 2px red solid;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.foodButton{
+    background-color: orange;
+    border-radius: 2px;
+    padding: 1rem;
+}
+
+/* put in other two */
+.bothFoodAndDrinkColumnContainer{
+    display: flex;
+    border: 4px dotted blue;
+    height: 400px;
+}
+
+/* put in food */
+.foodsLeftContainer{
+    width: 50%;
+    border: 5px solid green;
+}
+
+/* put in drink */
+.drinksRightContainer{
+    width: 50%;
+    border: 5px solid purple;
+}
+
+
+.foodSingleContainer{
+    display: flex;
+    flex-direction: column;
+    border: 3px red solid;
+    gap: 1rem;
+}
+
+.foodNameAndPriceContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    
+}
+
+.drinkNameAndPriceContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    
+}
+
+.drinkName{
+    font-weight: bold;
+}
+
+.drinkPrice{
+    color: green;
+    font-weight: bold; 
+}
+
+.drinkSingleContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 3px orange solid;
+}
+
+.foodDescription{
+    font-size: 1.1rem;
+    width: 83%;
+    border: 2px black solid;
+    line-height: 1.5rem;
+}
+
+
+.foodName{
+    font-weight: bold;
+}
+
+.foodPrice{
+    color: green;
+    font-weight: bold; 
+}
+
+

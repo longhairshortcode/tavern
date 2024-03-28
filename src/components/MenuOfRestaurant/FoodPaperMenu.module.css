@@ -1,0 +1,44 @@
+/* put in other two */
+.bothFoodAndDrinkColumnContainer{
+    display: flex;
+    border: 4px dotted blue;
+    height: 400px;
+}
+
+/* put in food */
+.foodsLeftContainer{
+    width: 50%;
+    border: 5px solid green;
+}
+
+
+.foodSingleContainer{
+    display: flex;
+    flex-direction: column;
+    border: 3px red solid;
+    gap: 1rem;
+}
+
+.foodNameAndPriceContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    
+}
+
+.foodDescription{
+    font-size: 1.1rem;
+    width: 83%;
+    border: 2px black solid;
+    line-height: 1.5rem;
+}
+
+
+.foodName{
+    font-weight: bold;
+}
+
+.foodPrice{
+    color: green;
+    font-weight: bold; 
+}
