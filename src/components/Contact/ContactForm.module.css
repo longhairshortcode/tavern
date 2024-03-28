@@ -59,7 +59,7 @@
     flex-direction: column;
     /* align-items: center; */
     /* justify-content: space-evenly; */
-    gap: 1rem;
+    gap: 2rem;
     min-height: 400px;
     /* padding */
     max-width: var(--max-width);
@@ -91,7 +91,7 @@
 
 .formLeftAndRightInputs{
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     justify-content: center;
     /* border: 2px black solid; */
     /* max-width: 700px; */
@@ -103,7 +103,7 @@
 .formLeftInputs{
     display: flex;
     flex-direction: column;
-    gap: 1.75rem;
+    gap: 2rem;
     /* border: 2px solid hotpink; */
     width: 50%;
 }
@@ -111,7 +111,7 @@
 .formRightInputs{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     /* border: 2px solid orange; */
     width: 50%;
 }
