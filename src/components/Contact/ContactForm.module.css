@@ -44,7 +44,8 @@
 }
 
 .titleAboveForm{
-    font-size: 6rem;
+    font-size: 5rem;
+    font-weight: 100;
 }
 
 .paragraphAboveForm{
@@ -155,8 +156,23 @@ textarea{
 }
 
 @media screen and (max-width: 480px){
+
+    .componentContainer{
+        padding: var(--padding);
+    }
+
+    .h1AndParagraphAndPicContainer{
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+
     .formLeftAndRightInputs{
         flex-direction: column;
+    }
+
+    .h1AndParagraphContainer, .hostPicContainer{
+        width: 100%;
     }
 
     .formLeftInputs{
