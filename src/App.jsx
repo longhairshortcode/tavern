@@ -8,6 +8,8 @@ import Catering from "./pages/Catering"
 import Locations from "./pages/Locations"
 import Contact from "./pages/Contact"
 import Order from "./pages/Order"
+import MenuOfRestaurant from "./pages/MenuOfRestaurant"
+
 
 register();
 
@@ -20,7 +22,7 @@ function App() {
       <Routes>
         <Route path={"/"} element={<Home/>}/>
         <Route path={"/about"} element={<About/>}/>
-      
+        <Route path={"/menu"} element={<MenuOfRestaurant/>}/>      
         <Route path={"/catering"} element={<Catering/>}/>
         <Route path={"/locations"} element={<Locations/>}/>
         <Route path={"/contact"} element={<Contact/>}/>

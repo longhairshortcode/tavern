@@ -1,0 +1,18 @@
+.componentContainer{
+    height: calc(100vh - 8rem);
+    background-image: url("../../assets/chefHand.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.menuTopAndBottomContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--max-width);
+    /* background-color: green; */
+    height: 600px;
+    border: 2px solid black;
+}

@@ -1,27 +1,75 @@
 .componentContainer{
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center;
+    /* gap: 1rem; */
     background-color: rgba(241, 237, 237);
     min-height: calc(100vh - 8rem);
+    /* border: 2px solid black; */
+
+}
+
+
+.h1AndParagraphAndPicContainer{
+    display: flex;
+    align-items: start;
+    max-width: var(--max-width);
     width: 100%;
+    gap: 1rem;
+    /* border: 2px solid red; */
+    margin-top: 7rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.h1AndParagraphContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* border: 2px solid hotpink; */
+    width: 45%;
+}
+
+.hostPicContainer{
+    /* border: 2px red solid; */
+    width: 55%;
+}
+
+.hostPic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.titleAboveForm{
+    font-size: 6rem;
+}
+
+.paragraphAboveForm{
+    /* border: green 2px solid; */
+    width: 100%;
+    line-height: 3rem;
 }
 
 .formContainer{
+    /* border: 2px blue solid; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    gap: 1rem;
     min-height: 400px;
     /* padding */
     max-width: var(--max-width);
     width: 100%;
      /* gap: 8rem; */
      background-color: rgba(241, 237, 237);
-     box-shadow: 
-     rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, /* Shadow at the bottom */
-     rgba(0, 0, 0, 0.1) 0px -10px 15px -3px, /* Shadow at the top */
-     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; /* Additional shadow*/
+     /* box-shadow:  */
+     /* rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, Shadow at the bottom */
+     /* rgba(0, 0, 0, 0.1) 0px -10px 15px -3px, Shadow at the top */
+     /* rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; Additional shadow */
     /* border: 2px  orange solid; */
     border-radius: 10px;
     
@@ -34,9 +82,11 @@
 }
 
 .formTitle{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: black;
-    font-weight: bold;
+    /* border: 2px solid black; */
+    width: 100%;
+    /* padding: 0 4rem; */
 }
 
 .formLeftAndRightInputs{
@@ -46,7 +96,8 @@
     /* border: 2px black solid; */
     /* max-width: 700px; */
     width: 100%;
-    padding: 0 4rem;
+    /* padding: 0 4rem; */
+    /* margin-bottom: 1rem; */
 }
 
 .formLeftInputs{
@@ -71,6 +122,7 @@ input, select, option{
     border-radius: 2px;
     padding: 0 .75rem;
     font-weight: bold;
+    border: 1px solid rgb(182, 148, 85);
 }
 
 
@@ -79,14 +131,19 @@ textarea{
     color: black;
     font-size: 1.3rem;
     border-radius: 2px;
-    padding: 0 .75rem;
+    padding: 0 .75rem;border: 1px solid rgb(182, 148, 85);
     
+}
+.paragraphAboveButton{
+    /* border: 2px purple solid; */
+    width: 80%;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 .formSubmitButtonContainer{    
     display: flex;
-    justify-content: center;
-    /* border: 2px solid yellow; */
+    /* justify-content: center; */
     width: 100%;
 }
 
@@ -95,4 +152,38 @@ textarea{
     border-radius: 1.5rem;
     color: white;
     background-color: orange;
+}
+
+@media screen and (max-width: 480px){
+    .formLeftAndRightInputs{
+        flex-direction: column;
+    }
+
+    .formLeftInputs{
+        width: 100%;
+    }
+    
+    .formRightInputs{
+        width: 100%;
+    }
+
+
+    textarea{
+        height: 100px;
+          
+    }
+
+    .formContainer{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .formSubmitButton{
+        margin-top: 2rem;
+    }
+
+    .formTitle{
+        margin-bottom: 2rem;
+    }
+    
 }

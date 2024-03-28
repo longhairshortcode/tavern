@@ -1,6 +1,7 @@
 import style from "./ContactForm.module.css"
 import { useState } from "react"
 import axios from "axios"
+import host from "../../assets/host.webp"
 
 
 function ContactForm() {
@@ -62,9 +63,20 @@ const handleSubmit = async (e) => {
 // }
   return (
     <div className={style.componentContainer}>
+      {/* <div className={style.leftThirdOrange}></div>
+      <div className={style.rightTwoThirds}> */}
+      <div className={style.h1AndParagraphAndPicContainer}>
+        <div className={style.h1AndParagraphContainer}>
+          <h1 className={style.titleAboveForm}>Contact Us</h1>
+          <p className={style.paragraphAboveForm}>Thank you for your interest in Tavern Restaurant. We appreciate your business and love all of our loyal customers. Please fill out the form below. One of our restaurant admin staff will happily reach out to you via email and/or phone to answer any questions. We look forward to serving you!</p>
+        </div>
+        <div className={style.hostPicContainer}>
+          <img className={style.hostPic} src={host} alt="hostess smiling at front of restaurant"/>
+        </div>
+      </div>
       <form className={style.formContainer} onSubmit={handleSubmit}>
         <div className={style.formTitleContainer}>
-            <p className={style.formTitle}>Ask Us Anything:</p>
+            <h2 className={style.formTitle}>Your Details:</h2>
         </div>
         <div className={style.formLeftAndRightInputs}>
             <div className={style.formLeftInputs}>
@@ -127,10 +139,12 @@ const handleSubmit = async (e) => {
                 </textarea>
             </div>
         </div>
+        <p className={style.paragraphAboveButton}>By clicking the button below you agree to be contacted by one of our staff members via email or phone.</p>
         <div className={style.formSubmitButtonContainer}>
             <button className={style.formSubmitButton}>Submit Question</button>
         </div>
       </form>
+      {/* </div> */}
     </div>
   );
   }
