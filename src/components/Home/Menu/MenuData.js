@@ -8,7 +8,8 @@ import tacos from "../../../assets/tacos.jpeg"
 
 const MenuData = [
     {
-     id: 1,   
+     id: 1,
+     type: "food",   
      img: pizza,
      dishName: "Pizza",
      dishType:"Italian",
@@ -18,6 +19,7 @@ const MenuData = [
     },
     {
      id: 2,   
+     type: "food",
      img: steak,
      dishName: "Steak",
      dishType:"American",
@@ -27,6 +29,7 @@ const MenuData = [
     },
     {
      id: 3,   
+     type: "food",
      img: salad,
      dishName: "Salad",
      dishType:"Greek",
@@ -35,7 +38,8 @@ const MenuData = [
      dishPrice:"$8.00",
     },
     {
-     id: 4,   
+     id: 4,
+     type: "food",   
      img: noodles,
      dishName: "Noodles",
      dishType:"Asian-Fusion",
@@ -44,7 +48,8 @@ const MenuData = [
      dishPrice:"$10.00",
     },
     {
-     id: 5,   
+     id: 5,
+     type: "food",   
      img: masala,
      dishName: "masala",
      dishType:"Indian",
@@ -53,7 +58,8 @@ const MenuData = [
      dishPrice:"$9.00",
     },
     {
-     id: 6,   
+     id: 6,
+     type: "food",   
      img: tacos,
      dishName: "tacos",
      dishType:"Mexican",

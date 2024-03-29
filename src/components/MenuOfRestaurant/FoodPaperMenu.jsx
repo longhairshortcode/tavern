@@ -1,22 +1,27 @@
 import style from './FoodPaperMenu.module.css'
+import MenuData from "../Home/Menu/MenuData.js"
 
 
 function FoodPaperMenu() {
   return (
         <div className={style.componentContainer}>
-          <div className={style.itemSingleContainer}>
+          { MenuData.map((item) => (
+              <div className={style.itemSingleContainer}>
             <div className={style.nameAndPriceContainer}>
               <p className={style.itemName}>
-              Food Name
+              {item.dishName}
               </p>
               <p className={style.itemPrice}>
-              $10.00
+              {item.dishPrice}
               </p>
             </div>
             <p className={style.itemDescription}>
-            This is the description of the menu item in great detail of all ingredients.
+              {item.dishDescription}
             </p>  
           </div>
+          ))
+          
+          }
         </div>
       // <div className={style.bothFoodAndDrinkColumnContainer}> 
       //         <div className={style.foodsLeftContainer}>

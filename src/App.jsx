@@ -12,7 +12,7 @@ import MenuOfRestaurant from "./pages/MenuOfRestaurant"
 import FoodPaperMenu from "./components/MenuOfRestaurant/FoodPaperMenu"
 import DrinkPaperMenu from "./components/MenuOfRestaurant/DrinkPaperMenu"
 
-
+//this is for swiper to initiate it but currently not using it
 register();
 
 function App() {
@@ -24,7 +24,8 @@ function App() {
       <Routes>
         <Route path={"/"} element={<Home/>}/>  
         <Route path={"about"} element={<About/>}/> 
-        <Route path={"menu"} element={<MenuOfRestaurant/>}> 
+        <Route path={"menu"} element={<MenuOfRestaurant/>}>
+          <Route index element={<FoodPaperMenu/>}/> 
           <Route path={"food-menu"} element={<FoodPaperMenu/>}/> 
           <Route path={"drink-menu"} element={<DrinkPaperMenu/>}/>  
         </Route>      
