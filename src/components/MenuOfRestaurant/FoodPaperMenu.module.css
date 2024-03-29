@@ -1,15 +1,18 @@
 /* put in other two */
 .componentContainer{
     display: flex;
-    border: 4px dotted blue;
-    height: 400px;
-    margin-top: 2rem;
+    /* border: 4px dotted blue; */
+    height: 200px;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .itemSingleContainer{
-    border: 2px solid green;
+    /* border: 2px solid orange; */
     height: fit-content;
-    width: 50%;
+    width: 48%;
+    padding: 0 1rem;
 }
 
 .nameAndPriceContainer{
