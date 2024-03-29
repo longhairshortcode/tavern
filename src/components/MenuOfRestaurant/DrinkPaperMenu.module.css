@@ -1,4 +1,56 @@
-/* put in drink */
+
+
+/* put in other two */
+.componentContainer{
+    display: flex;
+    border: 4px dotted blue;
+    height: 400px;
+    margin-top: 2rem;
+}
+
+.itemSingleContainer{
+    border: 2px solid green;
+    height: fit-content;
+    width: 50%;
+}
+
+.nameAndPriceContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.itemName{
+    font-weight: bold;
+}
+
+.itemPrice{
+    font-weight: bold;
+    color: green;
+}
+
+.itemDescription{
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    width: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+/* put in drink
+
+.bothFoodAndDrinkColumnContainer{
+    display: flex;
+    border: 4px dotted blue;
+    height: 400px;
+}
 .drinksRightContainer{
     width: 50%;
     border: 5px solid purple;
@@ -25,4 +77,4 @@
     flex-direction: column;
     gap: 1rem;
     border: 3px orange solid;
-}
+} */

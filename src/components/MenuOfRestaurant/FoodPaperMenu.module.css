@@ -1,44 +1,36 @@
 /* put in other two */
-.bothFoodAndDrinkColumnContainer{
+.componentContainer{
     display: flex;
     border: 4px dotted blue;
     height: 400px;
+    margin-top: 2rem;
 }
 
-/* put in food */
-.foodsLeftContainer{
+.itemSingleContainer{
+    border: 2px solid green;
+    height: fit-content;
     width: 50%;
-    border: 5px solid green;
 }
 
-
-.foodSingleContainer{
-    display: flex;
-    flex-direction: column;
-    border: 3px red solid;
-    gap: 1rem;
-}
-
-.foodNameAndPriceContainer{
+.nameAndPriceContainer{
     display: flex;
     justify-content: space-between;
-    background-color: yellow;
-    
+    margin-bottom: .5rem;
 }
 
-.foodDescription{
-    font-size: 1.1rem;
-    width: 83%;
-    border: 2px black solid;
-    line-height: 1.5rem;
-}
-
-
-.foodName{
+.itemName{
     font-weight: bold;
 }
 
-.foodPrice{
+.itemPrice{
+    font-weight: bold;
     color: green;
-    font-weight: bold; 
 }
+
+.itemDescription{
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    width: 85%;
+}
+
+
