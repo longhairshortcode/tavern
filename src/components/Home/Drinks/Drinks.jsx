@@ -3,7 +3,7 @@ import { RiStarSLine } from "react-icons/ri";
 import { LiaWalkingSolid } from "react-icons/lia";
 import DrinksData from "./Drink";  
 import { useState } from "react"
-// tf
+// t
 function Drinks() {
 
     const [zoomImage, setZoomImage] = useState("")
