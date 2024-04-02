@@ -1,5 +1,4 @@
 import style from "./Drinks.module.css"
-// import pizza from "../../../assets/pizza.jpg"
 import { RiStarSLine } from "react-icons/ri";
 import { LiaWalkingSolid } from "react-icons/lia";
 import DrinksData from "./Drink";  
