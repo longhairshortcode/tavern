@@ -5,7 +5,8 @@ import MenuData from "./MenuData";
 import { useState } from "react"
 import { AiOutlineClose } from "react-icons/ai" 
 
-function Menu() {
+
+function Menu({addToCart}) {
 
     const [zoomDish, setZoomDish] = useState("")
 
@@ -43,7 +44,7 @@ function Menu() {
                                     <p className={style.dishDescription}>{menu.dishDescription}</p>
                                     <div className={style.priceNButContainer}>
                                         <p className={style.dishPrice}>{menu.dishPrice}</p>
-                                        <button className={style.dishAddButton}>Add To Cart</button>
+                                        <button onClick={() => addToCart(menu)} className={style.dishAddButton}>Add To Cart</button>
                                     </div>
                                 </div>
                               </div>

@@ -41,6 +41,27 @@
     /* border: 2px red solid; */
 }
 
+.itemAndPriceContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.itemInChoices{
+    /* border: 2px solid red; */
+    /* width: 4.5rem; */
+    font-size: 1.1rem;
+}
+
+.priceInChoices{
+    margin-left: 1.5rem;
+    /* border: 2px solid black; */
+    width: 5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+
 .choices{
     position: absolute;
     display: flex;
@@ -89,11 +110,8 @@
     /* margin-bottom: .5rem; */
 }
 
-.drink, .food{
-    font-size: 1.2rem;
-}
 
-.drink:hover, .food:hover {
+.itemInChoices:hover {
     color: grey;
 }
 

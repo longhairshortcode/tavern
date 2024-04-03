@@ -4,12 +4,12 @@ import Drinks from "../components/Home/Drinks/Drinks"
 import Reservations from "../components/Home/Reservations/Reservations"
 import Reviews from "../components/Home/Reviews/Reviews"
 
-function Home() {
+function Home({addToCart}) {
   return (
     <>
       <Hero/>
-      <Menu/>
-      <Drinks/>
+      <Menu addToCart={addToCart}/>
+      <Drinks addToCart={addToCart}/>
       <Reservations/>
       <Reviews/>
     </>

@@ -148,7 +148,10 @@ const selectedItems = showSelection.map((item) => (
                         { showFood &&  
                         <div className={style.choices}>
                         {orderData.filter((item) => item.id <= 6).map((item) =>(
-                            <p className={style.food} onClick={() => handleSelection(item)} key={item.id}>{item.name}</p>
+                            <div className={style.itemAndPriceContainer}>
+                                <p className={style.itemInChoices} onClick={() => handleSelection(item)} key={item.id}>{item.name}..........</p>
+                                <p className={style.priceInChoices} key={item.id}>${item.price.toFixed(2)}</p>
+                            </div>
                         ))}   
                         </div>
                         }                       
@@ -161,10 +164,11 @@ const selectedItems = showSelection.map((item) => (
                         { showDrink && 
                         <div className={style.choices}> 
                         {orderData.filter((item) => item.id>= 7).map((item) =>(
-                           <p className={style.drink} onClick={() =>{ 
-                                handleSelection(item); 
-                              }} 
-                           key={item.id}>{item.name}</p>     
+                           <div className={style.itemAndPriceContainer}>
+                            <p className={style.itemInChoices} onClick={() => handleSelection(item)} key={item.id}>{item.name}..........</p>
+                            <p className={style.priceInChoices} key={item.id}>${item.price.toFixed(2)}</p>
+                           </div>
+                                
                         ))}
                         </div>
                         }

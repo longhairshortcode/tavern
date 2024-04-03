@@ -37,17 +37,15 @@
 .popularContainer{
     width: 100%;
     max-width: var(--max-width);
-    margin: auto;
-    padding: var(--padding);
+    margin: 0 auto 2rem auto;
     /* border: 2px black solid; */
-    margin-bottom: .5rem;
     /* border: red 2px dotted; */
     /*background-color: red; */
 }
 
 .allPopPicsAndTextContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 1.5rem;
     margin: 0 auto;

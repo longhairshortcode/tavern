@@ -1,14 +1,19 @@
 import style from './Navbar.module.css'
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import { useState } from "react"
 import StartOrder from '../common/StartOrder'
 import logo from '../assets/logo.png'
 import { HiMenu } from "react-icons/hi"
 import { AiOutlineClose } from "react-icons/ai"
 import { Link } from 'react-router-dom'  
+import { GiShoppingCart } from "react-icons/gi";
 
 
-function Navbar() {
+
+
+function Navbar({cartAmountLength}) {
+
+    const navigate = useNavigate()
 
     //Need State, toggleLinks, and closeLinkMenu  for @media q nav links
 
@@ -43,6 +48,10 @@ function Navbar() {
         </div>
         <div className={style.navButtonComponentContainer}>
            <Link to={"/order"}><StartOrder hoverBgColor={"grey"} bgColor={"black"}/></Link>
+           <div onClick={() => navigate("/cart")} className={style.amountAndCartContainer}>
+                <span className={style.cartAmount}>{cartAmountLength}</span>
+                <span><GiShoppingCart className={style.cart} size={20} /></span>
+           </div> 
         </div>
     {/* add toggleLink on onclick, and when want to have showLinks state being true/show the css styling for it
     then put the X icons to close out of it, if don't want that, put the burger */}

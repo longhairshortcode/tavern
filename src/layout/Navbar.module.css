@@ -40,6 +40,33 @@
     font-size: 1.3rem;
 }
 
+.navButtonComponentContainer{
+    display: flex;
+    align-items: center;
+}
+
+.cart{
+    margin-left: .5rem;
+    /* border: 2px solid blue; */
+}
+
+.amountAndCartContainer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.cartAmount{
+    font-size: 1.3rem;
+    /* border: 2px solid green; */
+    /* margin-left: .45rem; */
+    position: absolute;
+    right: 5px;
+    top: -8px;
+}
+
 .navButtonComponentContainer > button{
   background-color: red;
   font-size: 1rem;

@@ -33,13 +33,12 @@
     width: 100%;
     max-width: var(--max-width);
     margin: auto;
-    padding: var(--padding);
     /* background-color: red; */
 }
 
 .allDrinksPicsNTexContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1.5rem;
     flex-wrap: wrap;
 }

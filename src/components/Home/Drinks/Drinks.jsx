@@ -4,7 +4,7 @@ import { LiaWalkingSolid } from "react-icons/lia";
 import DrinksData from "./Drink";  
 import { useState } from "react"
 
-function Drinks() {
+function Drinks({addToCart}) {
 
     const [zoomImage, setZoomImage] = useState("")
 
@@ -41,7 +41,7 @@ function Drinks() {
                             <p className={style.drinkDescription}>{drink.drinkDescription}</p>
                             <div className={style.priceNButtonContainer} >
                                 <p className={style.drinkPrice}>{drink.drinkPrice}</p>
-                                <button className={style.drinkAddButton}>Add To Cart</button>
+                                <button onClick={() => addToCart(drink)} className={style.drinkAddButton}>Add To Cart</button>
                             </div>
                             </div>
                     </div> 
