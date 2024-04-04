@@ -109,6 +109,10 @@ useEffect(() => {
     setTotal(newTotal);
 }, [showSelection]);
 
+function useEffect() {
+
+}
+
 //Using for loop
 // useEffect(() => {
 //     let newSubtotal = 0

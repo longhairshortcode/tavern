@@ -1,12 +1,18 @@
 import style from "./Styles/Cart.module.css"
+import { useEffect } from "react"
 
 function Cart({cartAmount}) {
+
+useEffect() =(() => {
+
+}, [cartAmount])
+
   return (
       <div className={style.componentContainer}>
         <div className={style.cartContainer}>
             {/* 1 */}
             <div className={style.cartTotalTitleContainer}>
-              <h1 className={style.cartTotalTitle}>Cart ({cartAmount.length})</h1>
+              <h1 className={style.cartTotalTitle}>Cart ({carStAmount.length})</h1>
             </div>
             {/* 2 */}
             {cartAmount.map((item) => 
