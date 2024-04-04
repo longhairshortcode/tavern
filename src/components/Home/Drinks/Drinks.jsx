@@ -27,10 +27,10 @@ function Drinks({addToCart}) {
                         <div key={drink.id} className={style.drinkImgAndTxtSingle}>
                     
                         <div className={style.drinkPicTopContainer}>
-                            <img  onClick={()=>setZoomImage(drink.img)} className={style.drinkImage} src={drink.img} alt="a margarita"/> 
-                            <h3 className={style.drinkTitle}>{drink.drinkName}</h3>
+                            <img  onClick={()=>setZoomImage(drink.itemImg)} className={style.drinkImage} src={drink.img} alt="a margarita"/> 
+                            <h3 className={style.drinkTitle}>{drink.itemName}</h3>
                             <p className={style.drinkTypeAndTime}>
-                                <span className={style.drinkType}>{drink.drinkType}</span><span className={style.drinkTime}><LiaWalkingSolid className={style.enlargeMan} /> {drink.drinkTime}</span>
+                                <span className={style.drinkType}>{drink.itemType}</span><span className={style.drinkTime}><LiaWalkingSolid className={style.enlargeMan} /> {drink.drinkTime}</span>
                             </p>
                         </div>
         
@@ -38,9 +38,9 @@ function Drinks({addToCart}) {
                             <div className={style.stars}>
                                 <RiStarSLine /> <RiStarSLine /> <RiStarSLine /> <RiStarSLine /> <RiStarSLine />
                             </div>
-                            <p className={style.drinkDescription}>{drink.drinkDescription}</p>
+                            <p className={style.drinkDescription}>{drink.itemDescription}</p>
                             <div className={style.priceNButtonContainer} >
-                                <p className={style.drinkPrice}>{drink.drinkPrice}</p>
+                                <p className={style.drinkPrice}>{drink.itemPrice}</p>
                                 <button onClick={() => addToCart(drink)} className={style.drinkAddButton}>Add To Cart</button>
                             </div>
                             </div>

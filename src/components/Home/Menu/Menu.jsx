@@ -30,9 +30,9 @@ function Menu({addToCart}) {
                             
                                 <div className={style.popImgOnTop}>
                                     <img onClick={()=>setZoomDish(menu.img)} className={style.popImg} src={menu.img} alt={menu.dishName}/>
-                                    <h3 className={style.dishName}>{menu.dishName}</h3>
+                                    <h3 className={style.dishName}>{menu.itemName}</h3>
                                     <p className={style.typeAndTime}>
-                                        <span  className={style.type}>{menu.dishType}</span>
+                                        <span  className={style.type}>{menu.itemType}</span>
                                         <span  className={style.time}><LiaWalkingSolid className={style.enlargeMan} />{menu.dishTime}</span>
                                     </p>
                                 </div>
@@ -41,9 +41,9 @@ function Menu({addToCart}) {
                                     <div className={style.dishStars}>
                                         <RiStarSLine /> <RiStarSLine /> <RiStarSLine /> <RiStarSLine /> <RiStarSLine />
                                     </div>
-                                    <p className={style.dishDescription}>{menu.dishDescription}</p>
+                                    <p className={style.dishDescription}>{menu.itemDescription}</p>
                                     <div className={style.priceNButContainer}>
-                                        <p className={style.dishPrice}>{menu.dishPrice}</p>
+                                        <p className={style.dishPrice}>{menu.itemPrice}</p>
                                         <button onClick={() => addToCart(menu)} className={style.dishAddButton}>Add To Cart</button>
                                     </div>
                                 </div>

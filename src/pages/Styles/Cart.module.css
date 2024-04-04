@@ -1,0 +1,105 @@
+.componentContainer{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 14rem);
+    border: 4px solid red;
+    
+}
+
+.cartContainer{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 3rem;
+    border: 1px solid orange;
+    margin-top: 8rem;
+    width: 450px;
+    padding-top: 1.5rem;
+    
+ 
+}
+
+.cartTotalTitleContainer{
+    border-bottom: 1px solid orange;
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.cartTotalTitle{
+    font-size: 2rem;
+}
+
+.individualItemContainer{
+    /* border: 2px solid black; */
+    padding: 1rem;;
+}
+
+.itemNameAndPriceContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.itemName, .itemPrice{
+    /* border: 2px solid hotpink; */
+    font-weight: bold;
+}
+
+.itemDescription{
+    margin-bottom: .5rem;
+}
+
+.imgContainer {
+    /* border: 2px solid green; */
+    margin-bottom: .5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    overflow: hidden; /* Ensure the image does not overflow its container */
+}
+
+.imgContainer img {
+    width: 100%; /* Set the width of the image to 100% of its container */
+    height: 100%; /* Set the height of the image to 100% of its container */
+    object-fit: cover; /* Maintain aspect ratio while filling the container */
+}
+
+.cartSummaryContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+    /* border: 2px dotted purple; */
+}
+
+.cartSummaryTitle{
+    font-weight: bold;
+    border-bottom: 1px solid orange;
+    margin-bottom: 1rem;
+}
+
+.subtotalContainer, .taxContainer, .totalContainer{
+    display: flex;
+    /* border: 2px solid hotpink; */
+    width: fit-content;
+}
+
+.subtotalTitle, .taxTitle, .totalTitle{
+    margin-right: 1rem;
+    /* border: 2px solid orange; */
+    width: 70px;
+}
+
+.totalTitle, .totalPrice{
+    font-weight: bold;
+}
+
+.subtotalPrice, .taxPrice, .totalPrice{
+    /* border: 2px solid black; */
+}
+
+.removeButton{
+    padding: .3rem;
+    background-color: orange;
+    border-radius: 5px;
+}
+
