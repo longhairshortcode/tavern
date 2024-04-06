@@ -9,15 +9,33 @@
 .cartContainer{
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: fixed;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scroll-margin-right: 1rem;
     gap: 3rem;
     border: 1px solid orange;
     margin-top: 8rem;
+    margin-bottom: 3rem;
     width: 450px;
     padding-top: 1.5rem;
     
  
 }
+
+.cartContainer::-webkit-scrollbar{
+    width: 1rem;
+    
+}
+.cartContainer::-webkit-scrollbar-track{
+    background: transparent;
+
+}
+.cartContainer::-webkit-scrollbar-thumb{
+    background: orange;
+
+}
+
 
 .cartTotalTitleContainer{
     border-bottom: 1px solid orange;

@@ -40,7 +40,7 @@ function Drinks({addToCart}) {
                             </div>
                             <p className={style.drinkDescription}>{drink.itemDescription}</p>
                             <div className={style.priceNButtonContainer} >
-                                <p className={style.drinkPrice}>{drink.itemPrice}</p>
+                                <p className={style.drinkPrice}>${drink.itemPrice.toFixed(2)}</p>
                                 <button onClick={() => addToCart(drink)} className={style.drinkAddButton}>Add To Cart</button>
                             </div>
                             </div>

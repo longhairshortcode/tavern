@@ -35,17 +35,17 @@ const [total, setTotal] = useState(0)
 // }
 
 //changing this handleSelection from original above to below allows to change the quantity to 1 once but nothing can be added after
-const handleSelection = (item) => {
-    const existingItem = showSelection.find((selectedItem) => selectedItem.id === item.id);
+const handleSelection = (newItem) => {
+    const existingItem = showSelection.find((existingItem) => existingItem.id === newItem.id);
     if (existingItem) {
         // If the item already exists, increase its quantity by 1
-        const updatedSelection = showSelection.map((selectedItem) =>
-            selectedItem.id === item.id ? { ...selectedItem, quantity: selectedItem.quantity + 1 } : selectedItem
+        const updatedSelection = showSelection.map((existingItem) =>
+            existingItem.id === newItem.id ? { ...existingItem, quantity: existingItem.quantity + 1 } : existingItem
         );
         setShowSelection(updatedSelection);
     } else {
         // If the item doesn't exist, add it to showSelection with a quantity of 1
-        setShowSelection([...showSelection, { ...item, quantity: 1 }]);
+        setShowSelection([...showSelection, { ...newItem, quantity: 1 }]);
     }
 };
 
@@ -109,9 +109,6 @@ useEffect(() => {
     setTotal(newTotal);
 }, [showSelection]);
 
-function useEffect() {
-
-}
 
 //Using for loop
 // useEffect(() => {
@@ -151,10 +148,10 @@ const selectedItems = showSelection.map((item) => (
                         </button>
                         { showFood &&  
                         <div className={style.choices}>
-                        {orderData.filter((item) => item.id <= 6).map((item) =>(
+                        {orderData.filter((item) => item.id <= 6).map((item, index) =>(
                             <div className={style.itemAndPriceContainer}>
                                 <p className={style.itemInChoices} onClick={() => handleSelection(item)} key={item.id}>{item.name}..........</p>
-                                <p className={style.priceInChoices} key={item.id}>${item.price.toFixed(2)}</p>
+                                <p className={style.priceInChoices} key={item.id + index}>${item.price.toFixed(2)}</p>
                             </div>
                         ))}   
                         </div>
@@ -167,10 +164,10 @@ const selectedItems = showSelection.map((item) => (
                         </button>
                         { showDrink && 
                         <div className={style.choices}> 
-                        {orderData.filter((item) => item.id>= 7).map((item) =>(
+                        {orderData.filter((item) => item.id>= 7).map((item, index) =>(
                            <div className={style.itemAndPriceContainer}>
                             <p className={style.itemInChoices} onClick={() => handleSelection(item)} key={item.id}>{item.name}..........</p>
-                            <p className={style.priceInChoices} key={item.id}>${item.price.toFixed(2)}</p>
+                            <p className={style.priceInChoices} key={item.id + index}>${item.price.toFixed(2)}</p>
                            </div>
                                 
                         ))}

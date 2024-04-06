@@ -11,7 +11,7 @@ import { GiShoppingCart } from "react-icons/gi";
 
 
 
-function Navbar({cartAmountLength}) {
+function Navbar({cartQuantity}) {
 
     const navigate = useNavigate()
 
@@ -49,7 +49,7 @@ function Navbar({cartAmountLength}) {
         <div className={style.navButtonComponentContainer}>
            <Link to={"/order"}><StartOrder hoverBgColor={"grey"} bgColor={"black"}/></Link>
            <div onClick={() => navigate("/cart")} className={style.amountAndCartContainer}>
-                <span className={style.cartAmount}>{cartAmountLength}</span>
+                <span className={style.cartAmount}>{cartQuantity}</span>
                 <span><GiShoppingCart className={style.cart} size={20} /></span>
            </div> 
         </div>

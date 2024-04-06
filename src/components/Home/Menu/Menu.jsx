@@ -43,7 +43,7 @@ function Menu({addToCart}) {
                                     </div>
                                     <p className={style.dishDescription}>{menu.itemDescription}</p>
                                     <div className={style.priceNButContainer}>
-                                        <p className={style.dishPrice}>{menu.itemPrice}</p>
+                                        <p className={style.dishPrice}>${menu.itemPrice.toFixed(2)}</p>
                                         <button onClick={() => addToCart(menu)} className={style.dishAddButton}>Add To Cart</button>
                                     </div>
                                 </div>
