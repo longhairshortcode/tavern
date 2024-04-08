@@ -38,9 +38,8 @@ useEffect(() => {
           
               <p className={style.itemDescription}>{item.itemDescription}</p>
               <button className={style.removeButton}>Remove</button>
-            </div> <p></p>       
-          // his
-          // heie
+            </div>      
+     
          )}
           {/* 3 */}
             <div className={style.cartSummaryContainer}>
