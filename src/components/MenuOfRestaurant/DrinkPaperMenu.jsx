@@ -8,14 +8,14 @@ function DrinkPaperMenu() {
           <div key={item.id} className={style.itemSingleContainer}>
             <div className={style.nameAndPriceContainer}>
               <p className={style.itemName}>
-                {item.drinkName}
+                {item.itemName}
               </p>
               <p className={style.itemPrice}>
-                {item.drinkPrice}
+                ${item.itemPrice.toFixed(2)}
               </p>
             </div>
             <p className={style.itemDescription}>
-              {item.drinkDescription}
+              {item.itemDescription}
             </p>  
             </div>
       ) )}

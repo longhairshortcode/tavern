@@ -23,7 +23,7 @@ const DrinksData = [
     itemType:"Juice",
     itemTime:"6 mins",
     itemDescription:"This is a pure vegetable juice made with six veggies and apple.",
-    itemPrice:7.00,
+    itemPrice:7,
     quantity: 1,
 },
 {
@@ -33,7 +33,7 @@ const DrinksData = [
     itemType:"Smoothie",
     itemTime:"6 mins",
     itemDescription:"This is a cold thick drink made with mango and pineapple.",
-    itemPrice:7.00,
+    itemPrice:7,
     quantity: 1,
 },
 {
@@ -43,7 +43,7 @@ const DrinksData = [
     itemType:"Cocktail",
     itemTime:"4 mins",
     itemDescription:"This is a classic cocktail made with mint, agave, and limes.",
-    itemPrice:7.00,
+    itemPrice:7,
     quantity: 1,
 },
 {
@@ -53,7 +53,7 @@ const DrinksData = [
     itemType:"Hot Beverage",
     itemTime:"5 mins",
     itemDescription:"This is a hot drink made with fresh lemons.",
-    itemPrice:2.00,
+    itemPrice:2,
     quantity: 1,
 },
 {
@@ -63,7 +63,7 @@ const DrinksData = [
     itemType:"Shake",
     itemTime:"5 mins",
     itemDescription:"This is a classic non-dairy shake made with strawberries.",
-    itemPrice:7.00,
+    itemPrice:7,
     quantity: 1,
 },
 

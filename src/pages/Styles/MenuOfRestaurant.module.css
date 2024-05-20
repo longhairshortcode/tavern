@@ -79,6 +79,11 @@
     border-radius: 2rem;
 }
 
+.drinkButton:hover, .drinkButton:active, .foodButton:hover, .foodButton:active {
+    color: grey;
+}
+
+
 
 /* new stuff */
 

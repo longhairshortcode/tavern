@@ -14,7 +14,7 @@ const MenuData = [
       itemType: "Italian",
       itemTime: "22 mins",
       itemDescription: "This is an individual-sized pizza with lots of pineapple.",
-      itemPrice: 10.00,
+      itemPrice: 10,
       quantity: 1 // Start the quantity at 1
     },
     {
@@ -25,7 +25,7 @@ const MenuData = [
       itemType: "American",
       itemTime: "6 min",
       itemDescription: "This is a 2 oz plant-based steak with roasted vegetables.",
-      itemPrice: 12.00,
+      itemPrice: 12,
       quantity: 1
     },
     {
@@ -36,7 +36,7 @@ const MenuData = [
       itemType: "Greek",
       itemTime: "3 mins",
       itemDescription: "This is a huge Greek greens and veggie mixed salad with homemade dressing.",
-      itemPrice: 8.00,
+      itemPrice: 8,
       quantity: 1
     },
     {
@@ -47,7 +47,7 @@ const MenuData = [
       itemType: "Asian-Fusion",
       itemTime: "8 mins",
       itemDescription: "A bowl of East-Asian noodles with South-Asian veggies in a homemade sauce.",
-      itemPrice: 10.00,
+      itemPrice: 10,
       quantity: 1
     },
     {
@@ -58,7 +58,7 @@ const MenuData = [
       itemType: "Indian",
       itemTime: "10 mins",
       itemDescription: "Chickpeas and a spicy tomato sauce with ten Indian spices",
-      itemPrice: 9.00,
+      itemPrice: 9,
       quantity: 1
     },
     {
@@ -69,7 +69,7 @@ const MenuData = [
       itemType: "Mexican",
       itemTime: "6 min",
       itemDescription: "Three tacos with five vegetable of the week, special sauce, and avocado.",
-      itemPrice: 9.00,
+      itemPrice: 9,
       quantity: 1
     }
   ];

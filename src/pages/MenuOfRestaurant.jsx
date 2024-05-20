@@ -1,10 +1,17 @@
 import style from "./Styles/MenuOfRestaurant.module.css"
-import {Link, Outlet} from "react-router-dom"
+import {NavLink, Outlet} from "react-router-dom"
+
 // import { useState } from "react"
 
 
 function MenuOfRestaurant() {
 
+  function stylenav({isActive}) {
+    return {
+      backgroundColor: isActive ? "rgba(186, 153, 3, 0.557)": "orange",
+      color: isActive ? "rgb(145, 95, 2)" : "black",
+    }
+  }
 // const [showMenu, setShowMenu] = useState(true)
 
   return (
@@ -17,8 +24,8 @@ function MenuOfRestaurant() {
         <div className={style.menuRightContainer}>
           <h2 className={style.menuRightTitle}>Food And Beverage Menu</h2>
           <div className={style.buttonsContainer}>
-            <Link className={style.foodButton} to= "food-menu">Food</Link>
-            <Link className={style.drinkButton} to="drink-menu">Drink</Link>
+            <NavLink style={stylenav} className={style.foodButton} to= "food-menu">Food</NavLink>
+            <NavLink style={stylenav} className={style.drinkButton} to="drink-menu">Drink</NavLink>
           </div>
 
             <Outlet/>
