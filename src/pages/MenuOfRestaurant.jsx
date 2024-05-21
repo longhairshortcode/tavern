@@ -1,5 +1,6 @@
 import style from "./Styles/MenuOfRestaurant.module.css"
 import {NavLink, Outlet} from "react-router-dom"
+import menulogo from "../assets/menulogo.jpeg"
 
 // import { useState } from "react"
 
@@ -19,7 +20,7 @@ function MenuOfRestaurant() {
       <div className={style.menuLeftAndRightContainer}>
         <div className={style.menuLeftContainer}>
           <p className={style.restaurantLeftTitle}>TAVERN RESTAURANT</p>
-          <img className={style.menuImage} alt="restaurant logo"/>
+          <img className={style.menuImage} src="/menulogo.jpeg" alt="restaurant logo"/>
         </div>
         <div className={style.menuRightContainer}>
           <h2 className={style.menuRightTitle}>Food And Beverage Menu</h2>
