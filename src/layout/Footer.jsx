@@ -4,7 +4,7 @@ import logo from "../assets/logo.png"
 import { IoLogoInstagram } from "react-icons/io";
 import { RiTwitterLine } from "react-icons/ri";
 import { RiFacebookBoxFill } from "react-icons/ri";
-ass
+asss
 function Footer() {
   return (
     <footer className={style.componentContainer}>
