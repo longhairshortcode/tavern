@@ -1,4 +1,4 @@
-aimport style from "./Footer.module.css"
+saimport style from "./Footer.module.css"
 import { Link } from "react-router-dom"
 import logo from "../assets/logo.png"
 import { IoLogoInstagram } from "react-icons/io";
