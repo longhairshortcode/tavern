@@ -1,4 +1,4 @@
-1sssssssssssssssssimport style from "./Footer.module.css"
+1ssssssssss/sssssssimport style from "./Footer.module.css"
 import { Link } from "react-router-dom"
 import logo from "../assets/logo.png"
 import { IoLogoInstagram } from "react-icons/io";
