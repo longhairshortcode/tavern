@@ -42,7 +42,7 @@ function Navbar({cartQuantity}) {
         <div className={`${style['centerLinks']} ${showLinks ? style['showLinks'] : ""}`}>
             <NavLink to="/" onClick={closeLinkMenu}>About</NavLink>
             <NavLink to="/menu" onClick={closeLinkMenu}>Menu</NavLink>
-            <NavLink to="/catering" onClick={closeLinkMenu}>Catering</NavLink>
+            {/* <NavLink to="/catering" onClick={closeLinkMenu}>Catering</NavLink> */}
             <NavLink to="/locations" onClick={closeLinkMenu}>Locations</NavLink>
             <NavLink to="/contact" onClick={closeLinkMenu}>Contact</NavLink>
         </div>
