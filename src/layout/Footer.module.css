@@ -10,6 +10,15 @@
     background-color:  rgb(246, 187, 116);
     /* border: 2px red solid; */
 }
+
+.icon{
+    font-size: 25px;
+}
+
+.logoName{
+    font-weight: bold;
+    font-size: 20px;
+}
 /* I can make this more/less apart */
 .topInfoContainer{
     display: flex;

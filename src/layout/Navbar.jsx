@@ -7,6 +7,7 @@ import { HiMenu } from "react-icons/hi"
 import { AiOutlineClose } from "react-icons/ai"
 import { Link } from 'react-router-dom'  
 import { GiShoppingCart } from "react-icons/gi";
+import { GiTavernSign } from "react-icons/gi";
 
 
 
@@ -36,7 +37,13 @@ function Navbar({cartQuantity}) {
    <nav className={style.componentContainer}> 
     <div className={style.navbarContainer}>
         <div className={style.leftLogo}>
-            <NavLink to="/"><img className={style.logo} src={logo} alt="company logo"></img></NavLink>
+            {/* <NavLink to="/"><img className={style.logo} src={logo} alt="company logo"></img></NavLink> */}
+            {/* <div class="logo">
+                <div class={style.mainCircle}></div>
+                <div class={style.leftEar}></div>
+                <div class={style.rightEar}></div>
+            </div> */}
+            <p class={style.logoName}><GiTavernSign  class={style.icon} />tavern</p>
         </div>
     {/* First put the state here, if state is true, put state's class name to render the class' css style */}
         <div className={`${style['centerLinks']} ${showLinks ? style['showLinks'] : ""}`}>

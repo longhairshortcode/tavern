@@ -1,16 +1,20 @@
 import style from "./Footer.module.css"
 import { Link } from "react-router-dom"
-import logo from "../assets/logo.png"
+// import logo from "../assets/logo.png"
 import { IoLogoInstagram } from "react-icons/io";
 import { RiTwitterLine } from "react-icons/ri";
 import { RiFacebookBoxFill } from "react-icons/ri";
+import { GiTavernSign } from "react-icons/gi";
 
 function Footer() {
   return (
     <footer className={style.componentContainer}>
       <div className={style.topInfoContainer}>
         <div className={style.oneNameAndMission}>
-        <Link to={"/"}><img className={style.logo} src={logo} alt="company logo"></img></Link>
+        <Link to={"/"}>
+          {/* <img className={style.logo} src={logo} alt="company logo"></img> */}
+          <p class={style.logoName}><GiTavernSign  class={style.icon} />tavern</p>
+        </Link>
           <p>A multi-cultural plant-based organic restaurant with elevated flavors.</p>
           <p className={`${style['bold']} ${style['tagLine']}`}>Taste The World.</p>
         </div>
