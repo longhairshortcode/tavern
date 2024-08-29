@@ -1,4 +1,4 @@
-wsssswssesssssssimport style from './Navbar.module.css'
+wwsssswssesssssssimport style from './Navbar.module.css'
 import { NavLink, useNavigate } from "react-router-dom"
 import { useState } from "react"
 import StartOrder from '../common/StartOrder'
